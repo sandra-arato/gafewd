@@ -1,10 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
-* {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
-}
 
 /* Clear fix hack */
 .clearfix:after {
@@ -23,4 +18,19 @@
 body {
      font-family: 'Droid Sans', sans-serif;
      font-size: 16px;
+}
+
+/*nav {
+     display: block;
+     width: 100%;
+     height: 130px;
+     background-color: #03899C;
+     margin: 0;
+     position: fixed;
+     float: top;
+     
+}*/
+
+#container {
+     margin: 130px 0 0 0;
 }
