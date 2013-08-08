@@ -32,5 +32,22 @@ body {
 }*/
 
 #container {
-     margin: 130px 0 0 0;
+     display: block;
+     width: 775px;
+     margin: 20px auto 0 auto;
+     background-color: #555;
+     height: 450px;
+}
+
+.right {
+     width: 420px;
+     float: right;
+     background-color: #fff;
+}
+
+.right h2 {
+     margin-top: 40px;
+     font-size: 30px;
+     line-height: 1.3;
+     color: #f00;
 }
