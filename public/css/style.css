@@ -31,23 +31,63 @@ body {
      
 }*/
 
+nav {
+     background-color: #009d91;
+     color: #ffffff;
+}
+
 #container {
      display: block;
-     width: 775px;
+     width: 940px;
      margin: 20px auto 0 auto;
-     background-color: #555;
      height: 450px;
 }
 
+#container img {
+     width: 280px;
+     margin: 0;
+}
+
+
 .right {
-     width: 420px;
+     width: 640px;
      float: right;
-     background-color: #fff;
 }
 
 .right h2 {
-     margin-top: 40px;
-     font-size: 30px;
-     line-height: 1.3;
-     color: #f00;
+     margin: 40px 0 0 0;
+     font-size: 60px;
+     color: #33cec3;
+}
+
+.bigger-text {
+     font-size: 20px;
+}
+
+.index-textbox {
+     width: 200px;
+     margin-right: 20px;
+     float: left;
+}
+
+.index-textbox span {
+     background-color: #33cec3;
+     padding: 6px;
+     text-align: left;
+     font-family: 'Times New Roman';
+     color: #f93ab3;
+     font-weight: 500;
+     text-shadow: 0 2px 1px #ff21a2;
+     font-size: 16px;
+     white-space: nowrap;
+}
+
+.last {
+     margin-right: 0;
+}
+
+
+footer {
+     margin: 0;
+     background-color: #009d91;
 }
