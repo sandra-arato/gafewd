@@ -37,18 +37,29 @@
 	margin-right: 0;
 }
 
-.vcard {
-	position: absolute;
+.team {
+	width: 100%;
+}
+
+.team > div {
 	float: left;
-	background-color: red;
-	width: 600px;
-	height: 120px;
+	margin: 10px;
+}
+
+.vcard {
+	box-sizing: border-box;
+	width: 300px;			/*change this for mobile maybe*/
+	height: 136px;
+	padding: 8px;
 	font-size: 14px;
-	list-style-type: none;
+	border: 1px solid #888888;
+	border-radius: 9px;
+	box-shadow: 0 0 4px #cccccc;
+
 
 }
 
-.employee-photo {
+.vcard div {
 	background-image: url('../images/anonymus.jpg');
 	background-position: center;
 	background-size: 200px 150px;
@@ -62,18 +73,36 @@
 	border-radius: 60px;
 }
 
-.team ul {
+
+.vcard ul {
 	display: block;
 	float: left;
 	width: 160px;
-	margin: 0;
+	margin: 20px 0 0 0;
 	padding: 0;
 	background-color: blue;
 }
 
 .vcard li {
-	/*display: inline;*/
 	position: relative;
 	background-color: white;
 	list-style-type: none;
+	text-indent: 10px;
+}
+
+
+#anna {
+	background-image: url('../images/anna.jpg');
+}
+
+#ben {
+	background-image: url('../images/ben.jpg');
+}
+
+#connor {
+	background-image: url('../images/connor.jpg');
+}
+
+#diana {
+	background-image: url('../images/diana.jpg');
 }
