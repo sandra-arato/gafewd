@@ -1,0 +1,54 @@
+#company-structure {
+	width: 100%;
+	height: 310px;
+}
+
+#company-structure p {
+	font-size: 24px;
+	padding: 20px 40px 0 40px;
+}
+
+#company-structure div {
+	float: left;
+	box-sizing: border-box;
+	width: 140px;
+	height: 120px;
+	margin-left: 40px;
+	margin-right: 12px;
+	border: 1px solid black;
+	background-color: white;
+}
+
+#company-structure div.last {
+	margin-right: 0;
+}
+
+.vcard {
+	position: absolute;
+	float: left;
+	background-color: red;
+	width: 150px;
+	height: 300px;
+	font-size: 14px;
+	list-style-type: none;
+	/*margin-right: 6px;*/
+
+}
+
+.vcard li {
+	display: inline-block;
+	float: left;
+	list-style-type: none;
+	z-index: 40;
+}
+
+#container .vcard  img {
+	display: block;
+	position: absolute;
+	clip:rect(10px,130px,110px,30px);
+	left: -30px;
+	width: 160px;
+	height: 120px;
+
+
+}
