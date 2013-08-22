@@ -18,28 +18,52 @@
 body {
      font-family: 'Droid Sans', sans-serif;
      font-size: 16px;
+     margin: 0;
+     padding: 0;
 }
 
-/*nav {
-     display: block;
-     width: 100%;
-     height: 130px;
-     background-color: #03899C;
-     margin: 0;
-     position: fixed;
-     float: top;
-     
-}*/
 
 nav {
+     display: block;
+     position: fixed;
+     height: 66px;
+     width: 100%;
+     top: 0;
      background-color: #009d91;
      color: #ffffff;
+     box-shadow: 0 2px 4px #cccccc;
+}
+
+h1 {
+     display: inline-block;
+     float: left;
+     margin: 0;
+     padding: 16px 0 10px 20px;
+     
+}
+
+nav a {
+     display: inline-block;
+     float: right;
+     box-sizing: border-box;
+     height: 100%;
+     width: 102px;
+     text-align: center;
+     padding-top: 32px;
+     text-decoration: none;
+     color: #ffffff;
+}
+
+nav a:hover {
+     background-color: #ffffff;
+     color: #33cec3;
+     padding-top: 30px;
 }
 
 #container {
      display: block;
      width: 940px;
-     margin: 20px auto 0 auto;
+     margin: 86px auto 0 auto;
      height: 450px;
 }
 
@@ -47,6 +71,7 @@ nav {
      width: 280px;
      margin: 0;
 }
+
 
 
 .right {
