@@ -1,3 +1,17 @@
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
 #company-structure {
 	width: 100%;
 	height: 310px;
@@ -27,28 +41,39 @@
 	position: absolute;
 	float: left;
 	background-color: red;
-	width: 150px;
-	height: 300px;
+	width: 600px;
+	height: 120px;
 	font-size: 14px;
 	list-style-type: none;
-	/*margin-right: 6px;*/
 
+}
+
+.employee-photo {
+	background-image: url('../images/anonymus.jpg');
+	background-position: center;
+	background-size: 200px 150px;
+	display: block;
+	float: left;
+	width: 120px;
+	height: 120px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	border-radius: 60px;
+}
+
+.team ul {
+	display: block;
+	float: left;
+	width: 160px;
+	margin: 0;
+	padding: 0;
+	background-color: blue;
 }
 
 .vcard li {
-	display: inline-block;
-	float: left;
+	/*display: inline;*/
+	position: relative;
+	background-color: white;
 	list-style-type: none;
-	z-index: 40;
-}
-
-#container .vcard  img {
-	display: block;
-	position: absolute;
-	clip:rect(10px,130px,110px,30px);
-	left: -30px;
-	width: 160px;
-	height: 120px;
-
-
 }
