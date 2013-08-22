@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Kavoon);
 
 
 /* Clear fix hack */
@@ -29,7 +30,7 @@ nav {
      height: 66px;
      width: 100%;
      top: 0;
-     background-color: #009d91;
+     background-color: #33cec3;
      color: #ffffff;
      box-shadow: 0 2px 4px #cccccc;
 }
@@ -39,6 +40,10 @@ h1 {
      float: left;
      margin: 0;
      padding: 16px 0 10px 20px;
+     font-family: 'Kavoon', cursive;
+     /*font-weight: 500;*/
+     color: #b1f100;
+     text-shadow: 1px 1px 1px #739d00;
      
 }
 
@@ -58,11 +63,12 @@ nav a:hover {
      background-color: #ffffff;
      color: #33cec3;
      padding-top: 30px;
+     border-top: 3px solid #b1f100;
 }
 
 #container {
      display: block;
-     width: 940px;
+     width: 990px;
      margin: 86px auto 0 auto;
      height: 450px;
 }
@@ -74,7 +80,7 @@ nav a:hover {
 
 
 
-.right {
+.right {                      /* probably rewrite from HERE */
      width: 640px;
      float: right;
 }
@@ -83,10 +89,13 @@ nav a:hover {
      margin: 40px 0 0 0;
      font-size: 60px;
      color: #33cec3;
+     font-family: 'Kavoon', cursive;
+     font-weight: 200;
+     text-shadow: 2px 2px 4px #cccccc;
 }
 
 .bigger-text {
-     font-size: 20px;
+     font-size: 24px;
 }
 
 .index-textbox {
@@ -95,24 +104,33 @@ nav a:hover {
      float: left;
 }
 
-.index-textbox span {
-     background-color: #33cec3;
-     padding: 6px;
-     text-align: left;
-     font-family: 'Times New Roman';
-     color: #f93ab3;
-     font-weight: 500;
-     text-shadow: 0 2px 1px #ff21a2;
-     font-size: 16px;
+.index-textbox span a {
+     display: block;
+     box-sizing: border-box;
+     border-radius: 4px;
+     width: 180px;
+     height: 36px;
+     float: right;
+
      white-space: nowrap;
+
+     line-height: 1.8;
+     font-size: 20px;
+     color: #ffffff;
+     background-color: #c7f83e;
+     text-decoration: none;
+     text-align: right;
+     margin-top: 6px;
+     padding-right: 12px;
+     
 }
 
 .last {
      margin-right: 0;
-}
+}                                       /* probably rewrite until HERE */
 
 
 footer {
      margin: 0;
-     background-color: #009d91;
+     background-color: #00665e;
 }
