@@ -33,6 +33,7 @@ nav {
      background-color: #33cec3;
      color: #ffffff;
      box-shadow: 0 2px 4px #cccccc;
+     z-index: 10000;
 }
 
 h1 {

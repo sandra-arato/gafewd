@@ -21,17 +21,34 @@
 	<div id="container" class="clear-fix">
 		<div id="company-structure">
 			<p>
-				We make ideas materialize. We help innovators, dreamers, hackers and tinkerers to achieve their goals by assisting them in their very first step, before they go big. All of us is here to make things happen, so no matter which department you're joining, you'll be surrounded with people who share the same enthusiasm.
+				We make ideas materialize. We help innovators, dreamers, hackers and tinkerers to achieve their goals by assisting them in their very first step, before they go big. Now, that you've joined us, you too can be a part of this great challenge. Sometimes there will be difficulties on the way, but we're here to help you. All of us.
 			</p>
-			<div>management</div>
-			<div>project facilitators</div>
-			<div>designers</div>
-			<div>operators</div>
-			<div class="last">office support</div>
+			<a href="management.html"><div>management</div></a> <!-- click on it to see what I want to show under each team -->
+			<a href="#"><div>facilitation</div></a>
+			<a href="#"><div>design</div></a>
+			<a href="#"><div>production</div></a>
+			<a href="#"><div class="last">office support</div></a>
 		</div>
 		<div class="team">
-			<div class="vcard">
-				<div class="employee-photo">Anonymus</div>
+			<div class="all-team-members"> <!-- all employee photos displayed when no team is clicked / default div START -->
+				<div>Anna Heisenberg</div>
+				<div>Ben Feynman</div> 			<!-- Each photo should show the person named in the div.   -->
+				<div>Connor Bolyai</div>		<!-- When the user hovers over the photos, the line of the -->
+				<div>Diana Kepler</div>			<!-- photos should move left or right to display more      -->
+				<div>Eva Fibonacci</div>		<!-- faces, and when a photo is clicked on, vcard is shown. -->
+				<div>Fiona Planck</div>
+				<div>Gina Fourier</div>
+				<div>Employee Name</div>
+				<div>Employee Name</div>
+				<div>Employee Name</div>
+				<div>Employee Name</div>
+				<div>Employee Name</div>
+			</div> <!-- all employee photosdisplayed when no team is clicked / default div END -->
+
+			<!-- to display the content below, comment out .all-team-members div's overflow property -->
+
+			<div class="vcard"> <!-- some examples of the id cards that I want to create for each employee. -->
+				<div>Anonymus</div>
 				<ul>
 					<li>Name</li>
 					<li>Team</li>
@@ -43,10 +60,10 @@
 
 
 			<div class="vcard">
-				<div id="anna" class="employee-photo">Anna Adams</div>
+				<div id="anna">Anna Heisenberg</div>
 				<ul>
-					<li>Anna Adams</li>
-					<li>Design</li>
+					<li>Anna Heisenberg</li>
+					<li>Design</li> <!-- when a group name is checked, only vcard in that group stay displayed -->
 					<li>Junior modeller</li>
 					<li>201</li>
 					<li>anna@busybees.com</li>
@@ -54,9 +71,9 @@
 			</div>
 
 			<div class="vcard">
-				<div id="ben" class="employee-photo">Ben Camnden</div>
+				<div id="ben">Ben Feynman</div>
 				<ul>
-					<li>Ben Camnden</li>
+					<li>Ben Feynman</li>
 					<li>Production</li>
 					<li>CNC operator</li>
 					<li>304</li>
@@ -65,9 +82,9 @@
 			</div>
 
 			<div class="vcard">
-				<div id="connor" class="employee-photo">Connor Smith</div>
+				<div id="connor">Connor Bolyai</div>
 				<ul>
-					<li>Connor Smith</li>
+					<li>Connor Bolyai</li>
 					<li>Production</li>
 					<li>RPT technologist</li>
 					<li>301</li>
@@ -76,9 +93,9 @@
 			</div>
 
 			<div class="vcard">
-				<div id="diana">Diana Scott</div>
+				<div id="diana">Diana Kepler</div>
 				<ul>
-					<li>Diana Scott</li>
+					<li>Diana Kepler</li>
 					<li>Management</li>
 					<li>Chief of Finance</li>
 					<li>107</li>
@@ -87,15 +104,39 @@
 			</div>
 
 			<div class="vcard">
-				<div id="" class="employee-photo">Diana Scott</div>
+				<div id="eva">Eva Fibonacci</div>
 				<ul>
-					<li>Diana Scott</li>
+					<li>Eva Fibonacci</li>
 					<li>Management</li>
 					<li>Chief of Finance</li>
-					<li>107</li>
-					<li>diana@busybees.com</li>
+					<li>104</li>
+					<li>eva@busybees.com</li>
 				</ul>
 			</div>
+
+			<div class="vcard">
+				<div id="fiona">Fiona Planck</div>
+				<ul>
+					<li>Fiona Planck</li>
+					<li>Facilitation</li>
+					<li>Senior Project Manager</li>
+					<li>202</li>
+					<li>fiona@busybees.com</li>
+				</ul>
+			</div>
+
+			<div class="vcard">
+				<div id="gina">Gina Fourier</div>
+				<ul>
+					<li>Gina Fourier</li>
+					<li>Office Support</li>
+					<li>Receptionist</li>
+					<li>101</li>
+					<li>gina@busybees.com</li>
+				</ul>
+			</div>
+
+
 
 		</div>
 	</div>
