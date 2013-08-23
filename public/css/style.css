@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
-@import url(http://fonts.googleapis.com/css?family=Kavoon);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lily+Script+One);
 
 
 /* Clear fix hack */
@@ -17,7 +17,8 @@
 }
 
 body {
-     font-family: 'Droid Sans', sans-serif;
+     background-color: #333333;
+     font-family: 'Noto Sans', sans-serif;
      font-size: 16px;
      margin: 0;
      padding: 0;
@@ -30,9 +31,8 @@ nav {
      height: 66px;
      width: 100%;
      top: 0;
-     background-color: #33cec3;
-     color: #ffffff;
-     box-shadow: 0 2px 4px #cccccc;
+     background-color: #ffffff;
+     box-shadow: 0 2px 4px #111111;
      z-index: 10000;
 }
 
@@ -41,7 +41,7 @@ h1 {
      float: left;
      margin: 0;
      padding: 16px 0 10px 20px;
-     font-family: 'Kavoon', cursive;
+     font-family: 'Lily Script One', cursive;
      /*font-weight: 500;*/
      color: #b1f100;
      text-shadow: 1px 1px 1px #739d00;
@@ -57,7 +57,7 @@ nav a {
      text-align: center;
      padding-top: 32px;
      text-decoration: none;
-     color: #ffffff;
+     color: #222222;
 }
 
 nav a:hover {
@@ -74,58 +74,6 @@ nav a:hover {
      height: 450px;
 }
 
-#container img {
-     width: 280px;
-     margin: 0;
-}
-
-
-
-.right {                      /* probably rewrite from HERE */
-     width: 640px;
-     float: right;
-}
-
-.right h2 {
-     margin: 40px 0 0 0;
-     font-size: 60px;
-     color: #33cec3;
-     font-family: 'Kavoon', cursive;
-     font-weight: 200;
-     text-shadow: 2px 2px 4px #cccccc;
-}
-
-.bigger-text {
-     font-size: 24px;
-}
-
-.index-textbox {
-     width: 200px;
-     margin-right: 20px;
-     float: left;
-}
-
-.index-textbox span a {
-     display: block;
-     box-sizing: border-box;
-     border-radius: 4px;
-     width: 180px;
-     height: 36px;
-     float: right;
-
-     white-space: nowrap;
-
-     line-height: 1.8;
-     font-size: 20px;
-     color: #ffffff;
-     background-color: #c7f83e;
-     text-decoration: none;
-     text-align: right;
-     margin-top: 6px;
-     padding-right: 12px;
-     
-}
-
 .last {
      margin-right: 0;
 }                                       /* probably rewrite until HERE */
@@ -133,5 +81,5 @@ nav a:hover {
 
 footer {
      margin: 0;
-     background-color: #00665e;
+     background-color: #222222;
 }

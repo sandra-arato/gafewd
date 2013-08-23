@@ -1,0 +1,55 @@
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+     background: url('../images/index-bg.JPG') repeat-y fixed;
+     background-size: cover;
+}
+
+#container {
+     background-color: rgba(222, 222, 0, 0.7);
+     /*margin-right: 200px;*/
+}
+
+#container > div {
+     display: block;
+     float: left;
+     width: 150px;
+     background-color: yellow;
+     margin-left: 140px;
+}
+
+#container > div:first-child {
+    width: 100%
+    background-color: blue;
+}
+
+
+#container a {
+     font-family: 'Lily Script One', cursive;
+     text-decoration: none;
+     color: #222222;
+     white-space: nowrap;
+     line-height: 2.4;
+}
+
+#container h2 {
+     display: block;
+     background-color: blue;
+     /*margin-top: 20px;*/
+     /*text-indent: 240px;*/
+     margin-bottom: 0;
+     padding-top: 90px;
+     /*padding-left: 140px;*/
+     font-size: 40px;
+}
