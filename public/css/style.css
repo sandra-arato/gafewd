@@ -17,7 +17,7 @@
 }
 
 body {
-     background-color: #333333;
+     background-color: #555555;
      font-family: 'Noto Sans', sans-serif;
      font-size: 16px;
      margin: 0;
@@ -71,15 +71,14 @@ nav a:hover {
      display: block;
      width: 990px;
      margin: 86px auto 0 auto;
-     height: 450px;
+     /*height: 450px;*/
 }
 
-.last {
-     margin-right: 0;
-}                                       /* probably rewrite until HERE */
 
 
 footer {
      margin: 0;
-     background-color: #222222;
+     background: #222222 url('../images/footer-bg.png');
+     box-shadow: 0 -2px 4px #111111;
+     z-index: 9990;
 }
