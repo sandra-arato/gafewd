@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/team.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
 	<nav class="clearfix">
@@ -18,130 +18,143 @@
 		<a href="#">team</a>
 		<a href="#">workspace</a>
 	</nav>
-	<div id="container" class="clear-fix">
-		<div id="company-structure">
+	<div id="container" class="clearfix">
+		<div id="company-structure" class="clearfix">
 			<p>
-				We make ideas materialize. We help innovators, dreamers, hackers and tinkerers to achieve their goals by assisting them in their very first step, before they go big. Now, that you've joined us, you too can be a part of this great challenge. Sometimes there will be difficulties on the way, but we're here to help you. All of us.
+				We make ideas materialize. We help innovators, dreamers, hackers and tinkerers to achieve their goals by assisting them in their very first step, before they go big. Now, that you've joined us, you too can be a part of this great challenge. 
 			</p>
-			<a href="management.html"><div>management</div></a> <!-- click on it to see what I want to show under each team -->
-			<a href="#"><div>facilitation</div></a>
-			<a href="#"><div>design</div></a>
-			<a href="#"><div>production</div></a>
-			<a href="#"><div class="last">office support</div></a>
+			<a href="#" id="manag-button">management</a> <!-- click on it to see what I want to show under each team -->
+			<a href="#" id="facil-button">facilitation</a>
+			<a href="#" id="desig-button">design</a>
+			<a href="#" id="produ-button">production</a>
+			<a href="#" id="offic-button" class="last">office support</a>
 		</div>
+		<div class="all-team-members"> <!-- all employee photos displayed when no team is clicked / default div START -->
+			<div id="anna">Anna Heisenberg</div>
+			<div id="ben">Ben Feynman</div> 			<!-- Each photo should show the person named in the div.   -->
+			<div id="connor">Connor Bolyai</div>		<!-- When the user hovers over the photos, the line of the -->
+			<div id="diana">Diana Kepler</div>			<!-- photos should move left or right to display more      -->
+			<div id="eva">Eva Fibonacci</div>		<!-- faces, and when a photo is clicked on, vcard is shown. -->
+			<div id="fiona">Fiona Planck</div>
+			<div id="gina">Gina Fourier</div>
+			<div id="henry">Henry Hamilton</div>
+			<div id="ian">Ian </div>
+			<div id="jon">Employee Name</div>
+			<div id="kyle">Employee Name</div>
+			
+		</div> <!-- all employee photosdisplayed when no team is clicked / default div END -->
+
 		<div class="team">
-			<div class="all-team-members"> <!-- all employee photos displayed when no team is clicked / default div START -->
-				<div>Anna Heisenberg</div>
-				<div>Ben Feynman</div> 			<!-- Each photo should show the person named in the div.   -->
-				<div>Connor Bolyai</div>		<!-- When the user hovers over the photos, the line of the -->
-				<div>Diana Kepler</div>			<!-- photos should move left or right to display more      -->
-				<div>Eva Fibonacci</div>		<!-- faces, and when a photo is clicked on, vcard is shown. -->
-				<div>Fiona Planck</div>
-				<div>Gina Fourier</div>
-				<div>Employee Name</div>
-				<div>Employee Name</div>
-				<div>Employee Name</div>
-				<div>Employee Name</div>
-				<div>Employee Name</div>
-			</div> <!-- all employee photosdisplayed when no team is clicked / default div END -->
+			
 
 			<!-- to display the content below, comment out .all-team-members div's overflow property -->
-
-			<div class="vcard"> <!-- some examples of the id cards that I want to create for each employee. -->
-				<div>Anonymus</div>
-				<ul>
-					<li>Name</li>
-					<li>Team</li>
-					<li>Position</li>
-					<li>Phone</li>
-					<li>Email</li>
-				</ul>
-			</div>
-
-
+			<!-- some examples of the id cards that I want to create for each employee. -->
+		
 			<div class="vcard">
 				<div id="anna">Anna Heisenberg</div>
+				<span><i class="icon-phone-sign"></i><br />304</span>
 				<ul>
 					<li>Anna Heisenberg</li>
 					<li>Design</li> <!-- when a group name is checked, only vcard in that group stay displayed -->
 					<li>Junior modeller</li>
-					<li>201</li>
 					<li>anna@busybees.com</li>
 				</ul>
 			</div>
 
 			<div class="vcard">
 				<div id="ben">Ben Feynman</div>
+				<span><i class="icon-phone-sign"></i><br />602</span>
 				<ul>
 					<li>Ben Feynman</li>
 					<li>Production</li>
 					<li>CNC operator</li>
-					<li>304</li>
 					<li>ben@busybees.com</li>
 				</ul>
 			</div>
 
 			<div class="vcard">
 				<div id="connor">Connor Bolyai</div>
+				<span><i class="icon-phone-sign"></i><br />602</span>
 				<ul>
 					<li>Connor Bolyai</li>
 					<li>Production</li>
 					<li>RPT technologist</li>
-					<li>301</li>
 					<li>connor@busybees.com</li>
 				</ul>
 			</div>
 
 			<div class="vcard">
 				<div id="diana">Diana Kepler</div>
+				<span><i class="icon-phone-sign"></i><br />107</span>
 				<ul>
 					<li>Diana Kepler</li>
 					<li>Management</li>
 					<li>Chief of Finance</li>
-					<li>107</li>
 					<li>diana@busybees.com</li>
 				</ul>
 			</div>
 
 			<div class="vcard">
 				<div id="eva">Eva Fibonacci</div>
+				<span><i class="icon-phone-sign"></i><br />201</span>
 				<ul>
 					<li>Eva Fibonacci</li>
 					<li>Management</li>
-					<li>Chief of Finance</li>
-					<li>104</li>
+					<li>Head of Finance</li>
 					<li>eva@busybees.com</li>
 				</ul>
 			</div>
 
 			<div class="vcard">
 				<div id="fiona">Fiona Planck</div>
+				<span><i class="icon-phone-sign"></i><br />202</span>
 				<ul>
 					<li>Fiona Planck</li>
 					<li>Facilitation</li>
-					<li>Senior Project Manager</li>
-					<li>202</li>
+					<li>Sr. Project Manager</li>
 					<li>fiona@busybees.com</li>
 				</ul>
 			</div>
 
 			<div class="vcard">
 				<div id="gina">Gina Fourier</div>
+				<span><i class="icon-phone-sign"></i><br />101</span>
 				<ul>
 					<li>Gina Fourier</li>
 					<li>Office Support</li>
 					<li>Receptionist</li>
-					<li>101</li>
 					<li>gina@busybees.com</li>
 				</ul>
 			</div>
+
+			<div class="vcard">
+				<div id="henry">Henry Hamilton</div>
+				<span><i class="icon-phone-sign"></i><br />108</span>
+				<ul>
+					<li>Henry Hamilton</li>
+					<li>Management</li>
+					<li>CEO</li>
+					<li>henry@busybees.com</li>
+				</ul>
+			</div>
+
+			<div class="vcard">
+				<div id="ian">Henry Hamilton</div>
+				<span><i class="icon-phone-sign"></i><br />108</span>
+				<ul>
+					<li>Henry Hamilton</li>
+					<li>Management</li>
+					<li>CEO</li>
+					<li>henry@busybees.com</li>
+				</ul>
+			</div>
+
 
 
 
 		</div>
 	</div>
 
-	<div class="clear"></div>
 
 	<footer>
 		<p>Next gig we're planning</p>
