@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic);
-@import url(http://fonts.googleapis.com/css?family=Lily+Script+One);
+@import url(http://fonts.googleapis.com/css?family=Fauna+One|Port+Lligat+Slab|Tulpen+One|Noto+Sans:400,700);
 
 
 /* Clear fix hack */
@@ -40,16 +39,30 @@ h1 {
      display: inline-block;
      float: left;
      margin: 0;
-     padding: 16px 0 10px 20px;
-     font-family: 'Lily Script One', cursive;
+     padding: 8px 0 10px 20px;
+     font-family: 'Tulpen One', 'Arial', sans-serif;
      /*font-weight: 500;*/
-     color: #b1f100;
-     text-shadow: 1px 1px 1px #739d00;
+     color: #dede00;
+     font-size: 46px;
+     font-weight: normal;
+     letter-spacing: 2px;
+     text-decoration: overline;
+     /*padding-right: 340px;*/
+     /*text-shadow: 1px 1px 1px #dede00;*/
      
 }
 
+h2, h3 {
+     font-family: 'Fauna One', 'Arial', sans-serif;
+}
+
+a {
+     font-family: 'Fauna One', serif;
+     text-decoration: none;
+}
+
 nav a {
-     display: inline-block;
+     display: block;
      float: right;
      box-sizing: border-box;
      height: 100%;
@@ -58,13 +71,14 @@ nav a {
      padding-top: 32px;
      text-decoration: none;
      color: #222222;
+     background-color: rgba(255, 255, 255, 0.7);
 }
 
 nav a:hover {
-     background-color: #ffffff;
-     color: #33cec3;
+     background-color: #d9d90f;
+     color: #ffffff;
      padding-top: 30px;
-     border-top: 3px solid #b1f100;
+     border-top: 3px solid #222222;
 }
 
 #container {
