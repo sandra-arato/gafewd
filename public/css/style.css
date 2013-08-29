@@ -92,7 +92,74 @@ nav a:hover {
 
 footer {
      margin: 0;
-     background: #222222 url('../images/footer-bg.png');
+     background: #d9d90f;
      box-shadow: 0 -2px 4px #111111;
      z-index: 9990;
+
 }
+
+
+footer a {
+     color: #ffffff;
+     width: 80px;
+     border-radius: 25px 0 0 0;
+     background-color: #444444;
+     padding: 36px 150px 3px 20px;
+     margin: 0 30px 0 20px;
+     box-shadow: 2px 2px 4px #222222;
+     font-size: 22px;
+}
+
+footer a:hover {
+     background-color: #666;
+     color: #a7a72a;
+}
+
+footer i {
+     color: #666666;
+}
+
+.next-program {
+     width: 350px;
+     margin-right: 20px;
+}
+
+.next-program p {
+     line-height: 1.4;
+     margin: 0;
+
+}
+
+div.next-program h4 {
+     font-size: 18px;
+}
+
+.next-program p strong {
+     display: inline-block;
+     background-color: #ffffff;
+     background-color: rgba(233, 233, 233, 0.5);
+     width: 110px;
+}
+
+.next-program p i {
+     display: inline-block;
+     width: 24px;
+     text-align: center;
+     color: #000000;
+}
+
+footer > div {
+     display: inline-block;
+     vertical-align: text-top;
+     margin-bottom: 50px;
+     margin-top: 20px;
+}
+
+footer span {
+     font-family: 'Fauna One', serif;
+     margin-top: 40px;
+     background-color: #ffffff;
+     padding: 3px 5px;
+
+}
+
