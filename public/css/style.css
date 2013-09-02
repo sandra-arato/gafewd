@@ -60,7 +60,9 @@ a {
      font-family: 'Fauna One', serif;
      text-decoration: none;
 }
-
+a:hover {
+     color: #ffffff;
+}
 nav a {
      display: block;
      float: right;
@@ -454,8 +456,4 @@ body#team-site {
      display: block;
      float: right;
      color: #ffffff;
-}
-
-#container div a:hover {
-     color: #a7a72a;
 }
