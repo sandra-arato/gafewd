@@ -78,7 +78,6 @@ nav a {
 
 nav a:hover {
      background-color: #d9d90f;
-     color: #ffffff;
      padding-top: 30px;
      border-top: 3px solid #222222;
 }
@@ -171,79 +170,53 @@ footer span {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
 
 
-/*body {
+body#index-site {
      background: url('../images/index-bg.JPG') repeat-y fixed;
      background-size: cover;
 }
 
-#container {
+#index-site #container div {
      background-color: rgba(150, 150, 150, 0.6);
-     width: 600px;
-     height: 570px;
-     margin-right: 200px;
-     border-radius: 4px;
 }
 
-#container > div {
-     float: left;
+#index-site #container > div:first-child {
+     float: right;
      box-sizing: border-box;
-     width: 180px;
-     margin-right: 20px;
-     padding: 0 0 0 15px;
+     width: 660px;
 }
 
-#container > div:first-child {
-     width: 100%;
-     margin-bottom: 0;
+#index-site #container > div {
+     float: right;
+     box-sizing: border-box;
+     width: 220px;
+     padding: 0 10px 0 15px;
+}
+#index-site #container > div:last-child{
+     margin-bottom: 20px;
 }
 
-#container > div:last-child {
-     margin-right: 0;
-}
-
-
-#container a {
+#index-site #container a {
      display: inline-block;
      box-sizing: border-box;
-     float: right;
      width: 100%;
      height: 100px;
      margin-top: 18px;
+     margin-bottom: 24px;
      padding: 60px 7px 0 0;
-     border-top: 3px solid #ffffff;
-     border-radius: 2px;
      background-color: #ffffff;
      font-family: 'Fauna One', 'Arial', sans-serif;
-     text-decoration: none;
      text-align: right;
      color: #222222;
-     white-space: nowrap;
-     font-size: 16px;
      font-weight: 600;
-
 }
 
-#container a:hover {
+#index-site #container a:hover {
      background-color: #d9d90f;
-     color: #ffffff;
+     /*padding-top: 30px;*/
      border-top: 3px solid #222222;
-     font-weight: 400;
+     /*border-top-left-radius: 40px;*/
 }
-
-#container h2 {
-     display: block;
-     -webkit-margin-before: 0;
-     margin-bottom: 0;
-     padding-top: 20px;
-     color: #dbdb25;
-     font-family: 'Fauna One', 'Arial', sans-serif;
-     font-size: 96px;
-}
-
-#container h3 {
-     color: #d9d90f;
-     text-shadow: 1px 1px 0 #444;
-}*/
+     
 
 /*end of index.html css */
 
@@ -356,7 +329,8 @@ body#team-site {
 .vcard div {
      background-image: url('../images/anonymus.jpg');
      background-position: center;
-     background-size: 180px 135px; /* I use this here because I want to use different size in the mobile version */
+     background-size: 180px 135px; 
+     /* I use this here because I want to use different size in the mobile version */
      display: block;
      float: left;
      width: 100px;
@@ -457,3 +431,5 @@ body#team-site {
      float: right;
      color: #ffffff;
 }
+
+
