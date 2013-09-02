@@ -163,3 +163,299 @@ footer span {
 
 }
 
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< okay, here comes the css for the index.html >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*body {
+     background: url('../images/index-bg.JPG') repeat-y fixed;
+     background-size: cover;
+}
+
+#container {
+     background-color: rgba(150, 150, 150, 0.6);
+     width: 600px;
+     height: 570px;
+     margin-right: 200px;
+     border-radius: 4px;
+}
+
+#container > div {
+     float: left;
+     box-sizing: border-box;
+     width: 180px;
+     margin-right: 20px;
+     padding: 0 0 0 15px;
+}
+
+#container > div:first-child {
+     width: 100%;
+     margin-bottom: 0;
+}
+
+#container > div:last-child {
+     margin-right: 0;
+}
+
+
+#container a {
+     display: inline-block;
+     box-sizing: border-box;
+     float: right;
+     width: 100%;
+     height: 100px;
+     margin-top: 18px;
+     padding: 60px 7px 0 0;
+     border-top: 3px solid #ffffff;
+     border-radius: 2px;
+     background-color: #ffffff;
+     font-family: 'Fauna One', 'Arial', sans-serif;
+     text-decoration: none;
+     text-align: right;
+     color: #222222;
+     white-space: nowrap;
+     font-size: 16px;
+     font-weight: 600;
+
+}
+
+#container a:hover {
+     background-color: #d9d90f;
+     color: #ffffff;
+     border-top: 3px solid #222222;
+     font-weight: 400;
+}
+
+#container h2 {
+     display: block;
+     -webkit-margin-before: 0;
+     margin-bottom: 0;
+     padding-top: 20px;
+     color: #dbdb25;
+     font-family: 'Fauna One', 'Arial', sans-serif;
+     font-size: 96px;
+}
+
+#container h3 {
+     color: #d9d90f;
+     text-shadow: 1px 1px 0 #444;
+}*/
+
+/*end of index.html css */
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< this is the css for the team page >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+
+body#team-site {
+     background: url('../images/team-bg.png');
+}
+
+#company-structure {
+     width: 100%;
+     /*height: 310px;*/
+     background-color: #ffffff;
+}
+
+#company-structure p {
+     font-size: 24px;
+     padding: 20px 40px;
+}
+
+#company-structure a {
+     display: block;
+     float: left;
+     box-sizing: border-box;
+     width: 140px;
+     height: 120px;
+     margin-left: 40px;
+     margin-right: 12px;
+     padding: 82px 0 0 8px;
+     border-radius: 40px 0 0 0;
+     color: #ffffff;
+}
+
+#company-structure div.last {
+     margin-right: 0;
+}
+
+#manag-button, #desig-button,  #offic-button {
+     background-color: #d9d90f;
+     /*background-color: rgba(250, 250, 0, 0.33);*/
+}
+
+#manag-button:hover, #desig-button:hover, #offic-button:hover {
+     background-color: #a7a72a;
+}
+
+#facil-button, #produ-button {
+     background-color: #ecec73;
+}
+
+#facil-button:hover, #produ-button:hover {
+     background-color: #8a8a00;
+}
+
+
+.team {
+     width: 100%;
+     height: 140px;
+}
+
+.team > div {
+     float: left;
+     margin: 10px;
+}
+
+.all-team-members {
+     margin: 30px auto 0 auto;
+     text-align: center;
+     background-color: #ffffff;
+     padding: 20px 0;
+     border-top: 10px solid #d9d90f;
+     /*border-right: 10px dotted #d9d90f;*/
+}
+
+.all-team-members div {
+     display: inline-block;
+     box-sizing: border-box;
+     background-image: url('../images/anonymus.jpg');
+     background-position: center;
+     background-size: 200px 150px; 
+     width: 120px;
+     height: 120px;
+     margin: 8px;
+     text-indent: 100%;
+     overflow: hidden;        
+     white-space: nowrap;
+     border-radius: 60px;
+     border: 8px solid transparent;
+
+}
+
+.all-team-members div:hover {
+     border-color: rgba(212, 212, 212, 0.4);
+}
+
+.vcard {
+     box-sizing: border-box;
+     width: 210px;            /*change this to 380px for mobile maybe*/
+     font-size: 14px;
+     border: 1px solid #888888;
+     border-radius: 80px 0 0 0;
+     background-color: #ffffff;
+
+
+}
+
+.vcard div {
+     background-image: url('../images/anonymus.jpg');
+     background-position: center;
+     background-size: 180px 135px; /* I use this here because I want to use different size in the mobile version */
+     display: block;
+     float: left;
+     width: 100px;
+     height: 100px;
+     margin: 20px 0 0 20px;
+     text-indent: 100%;
+     overflow: hidden;
+     white-space: nowrap;
+     border-radius: 50px;
+}
+
+.vcard span {
+     float: right;
+     margin-top: 40px;
+     margin-right: 20px;
+     font-size: 20px;
+     color: #909000;
+     font-family: 'Fauna One', serif;
+}
+
+.vcard i {
+     font-size: 50px;
+}
+
+.vcard ul {
+     display: block;
+     float: right;
+     width: 170px;
+     padding: 0;
+     margin-right: 20px;
+     /*margin-top: 30px; added when mobile*/
+
+}
+
+.vcard li {
+     position: relative;
+     background-color: #d9d90f;
+     list-style-type: none;
+     padding: 0 6px;
+     /*text-indent: 10px;*/
+}
+
+.vcard li:nth-child(2) {
+     color: #ffffff;
+}
+
+
+/*end of team page css*/
+
+/*here comes the company styling */
+
+#container img {
+     display: block;
+     box-sizing: border-box;
+     float: left;
+     width: 380px;
+     padding-right: 14px;
+     padding-top: 24px;
+}
+
+#intro-text h2 {
+     padding-top: 18px;
+     color: #d9d90f;
+}
+
+#container a h2 {
+     background-color: #ffffff;
+     padding: 16px 0 8px 20px;
+     margin: 0;
+     text-decoration: none;
+     color: #dede00;
+}
+
+#container a h2:hover {
+     background-color: #d9d90f;
+     color: #ffffff;
+}
+
+
+#slide1, #slide2, #slide3, #slide4 {
+     padding-top: 70px;
+     padding-bottom:150px;
+}
+
+#slide4 img {
+     float: left;
+     height: 190px;
+     width: auto;
+     padding: 0 20px 0 36px;
+}
+
+#slide4 img#last {
+     padding-right: 0;
+}
+
+#container div a {
+     display: block;
+     float: right;
+     color: #ffffff;
+}
+
+#container div a:hover {
+     color: #a7a72a;
+}
