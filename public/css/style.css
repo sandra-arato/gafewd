@@ -216,7 +216,15 @@ body#index-site {
      border-top: 3px solid #222222;
      /*border-top-left-radius: 40px;*/
 }
-     
+
+#index-site #container h2  {
+     -webkit-margin-before: 0;
+     margin-bottom: 0;
+     padding-top: 20px;
+     color: #dbdb25;
+     font-size: 96px;
+}
+
 
 /*end of index.html css */
 
