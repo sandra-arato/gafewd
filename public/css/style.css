@@ -388,7 +388,14 @@ body#team-site {
 
 /*end of team page css*/
 
-/*here comes the company styling */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< here comes the company styling >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+
+div.company {
+     background-color: rgba(250, 250, 250, 0.3);
+     padding: 0 16px;
+}
 
 #container img {
      display: block;
