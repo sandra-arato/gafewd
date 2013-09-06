@@ -16,6 +16,9 @@ function sendEmailAddress () {
 		alert("Cool! Now go and check your inbox for the first issue ;)");
 	}
 }
+// here comes the company site stuff
+
+
 
 // here comes the stuff needed for the team site
 
@@ -28,5 +31,8 @@ function sendEmailAddress () {
 $(document).ready(function() {
 	$("#get-email-address").click(sendEmailAddress);
 	console.log("page loaded");
+
+	$("a").smoothScroll({speed: "500"});
+
 
 });
