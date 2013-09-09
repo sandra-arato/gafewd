@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
@@ -21,6 +22,7 @@
 		<a href="team.html">team</a>
 		<a href="workspace.html">workspace</a>
 	</nav>
+
 	<div id="container" class="clearfix">
 		<div id="company-structure" class="clearfix">
 			<p>
@@ -32,32 +34,12 @@
 			<a href="#" id="produ-button">production</a>
 			<a href="#" id="offic-button" class="last">office support</a>
 		</div>
-		<div> <!-- all employee photos displayed when no team is clicked / default div START -->
-		</div> <!-- all employee photosdisplayed when no team is clicked / default div END -->
-
+		<div> <!-- employee photos are loaded here when page loads-->
+		</div> 
 		<div class="team">
-			
-
-			<!-- to display the content below, comment out .all-team-members div's overflow property -->
-			<!-- some examples of the id cards that I want to create for each employee. -->
-		
-			<div class="vcard">
-				<div id="anna">Anna Heisenberg</div>
-				<span><i class="icon-phone-sign"></i><br />304</span>
-				<ul>
-					<li>Anna Heisenberg</li>
-					<li>Design</li> <!-- when a group name is checked, only vcard in that group stay displayed -->
-					<li>Junior modeller</li>
-					<li>anna@busybees.com</li>
-				</ul>
-			</div>
-
-			
-
-
-
-
+			<!-- vcards of employees are loaded here w JS -->
 		</div>
+
 	</div>
 
 

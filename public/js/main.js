@@ -37,18 +37,45 @@ function renderStaffPhotos (){
 	myDiv.addClass("all-team-members");
 
 	for (var index in staff ) {
+
 		var newDiv = $("<div />", { 
 			id: staff[index].id, 
 			text: staff[index].name,
 		});
+
 		newDiv.css("background-image", "url(images/" + staff[index].id + ".jpg)");
 		myDiv.append(newDiv);
 
+	}
+
+}
+
+function showTeamMembers() {
+
+	myDiv = $("div.team");
+	
+	for (var index in staff ) {
+	
+		newDiv = $("<div />");
+		newDiv.addClass("vcard " + staff[index].team);
+
+		employeePhoto = $("<div />", { 
+			id: staff[index].id, 
+			text: staff[index].name,
+		});
+		employeePhoto.css("background-image", "url(images/" + staff[index].id + ".jpg)");
+
+		phoneNumber =$("<span><i class='icon-phone-sign'></i><br />" + staff[index].phone +"</span>");
+
+		employeeData =$(
+			"<ul> <li>" + staff[index].name + "</li> <li>" + staff[index].team + "</li> <li>" + staff[index].role + "</li><li>" + staff[index].email + "</li></ul>");
+
+		myDiv.append(newDiv);
+		newDiv.append(employeePhoto, phoneNumber, employeeData);
+
+		console.log("vcard loop");
 
 	}
-	
-	console.log($("div#company-structure + div")[0].className);
-
 }
 
 
@@ -60,8 +87,10 @@ $(document).ready(function() {
 
 	renderStaffPhotos();
 
+	showTeamMembers();
 
-	$("a").smoothScroll({speed: "500"});
+
+	// $("a").smoothScroll({speed: "500"});
 
 	
 

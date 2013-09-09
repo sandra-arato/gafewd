@@ -367,8 +367,8 @@ body#index-site {
      box-sizing: border-box;
      width: 210px;            /*change this to 380px for mobile maybe*/
      font-size: 14px;
-     border: 1px solid #888888;
-     border-radius: 80px 0 0 0;
+     /*border: 1px solid #888888;*/
+     border-radius: 80px 4px 4px 4px;
      background-color: #ffffff;
 
 
