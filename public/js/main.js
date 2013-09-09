@@ -80,9 +80,7 @@ function showTeamMembers() {
 }
 
 function showTeam () {
-	// console.log(e);
 	var buttonId = event.target.id;
-	console.log(buttonId);
 	$("div.team").isotope({ filter: "." + buttonId});
 	console.log($("div.team"));
 	$("div#company-structure + div").css("display", "none");
