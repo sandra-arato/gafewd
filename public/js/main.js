@@ -70,38 +70,106 @@ function showTeamMembers() {
 			"<ul><li>" + staff[index].name + "</li><li>" + staff[index].team + "</li><li>" + staff[index].role + "</li><li>" + staff[index].email + "</li></ul>");
 
 		newDiv.append(employeePhoto, phoneNumber, employeeData);
-		newDiv.css("display", "none");
+		// newDiv.css("display", "none");
 
 		myDiv.append(newDiv);
 		
-		// console.log("vcard loop");
+	}
+}
+
+
+function showTeam () {
+
+	$("div#company-structure + div").css("display", "none");
+
+	var buttonId = event.target.id;
+	showTeamMembers();
+	$("div.team").isotope({ filter: "." + buttonId});
+}
+
+function lookForRoom (roomDivTitle) {
+	for (var index in rooms) {
+		if (roomDivTitle == rooms[index].room) {
+			console.log("object found");
+			currentRoom = rooms[index];
+			return currentRoom;
+		}
+		else {
+			console.log("object not found");
+		}
 
 	}
 }
 
-function showTeam () {
-	var buttonId = event.target.id;
-	$("div.team").isotope({ filter: "." + buttonId});
-	console.log($("div.team"));
-	$("div#company-structure + div").css("display", "none");
-	$("div.team div").css("display", "block");
+function changeRoom (roomId) {
+	switch (roomId) {
+		case "creative-space":
+			var roomDivTitle = "creative"
+			break;
+		case "office-space": 
+			var roomDivTitle = "office"
+			break;
+		case "reception-space":
+			var roomDivTitle = "rec"
+			break;
+		case "proto-space": 
+			var roomDivTitle = "protolab"
+			break;
+		case "lounge-space":
+			var roomDivTitle = "lounge"
+			break;
+		case "kitchen-space":
+			var roomDivTitle = "kitchen"
+			break;
+		default:
+			console.log("something happens in the switch");
+			break;
+	}
+	// console.log(roomDivTitle);
+	
+	lookForRoom(roomDivTitle);
+	$("#room-description h2").html(currentRoom.title).css("font-size", "48px");
+	$("div#room-description span + p").html(currentRoom.about);
+
+	// if (currentRoom.workingarea) {
+	// 	var myDiv = $("div#room-description");
+	// 	myDiv.addClass("all-team-members");
+
+	// 	for (var index in staff ) {
+
+	// 		var newDiv = $("<div />", { 
+	// 			id: staff[index].id, 
+	// 			text: staff[index].name,
+	// 		});
+
+	// 		newDiv.css("background-image", "url(images/" + staff[index].id + ".jpg)");
+	// 		myDiv.append(newDiv);
+
+	// 	}
+	// }
+	
+	
 }
+
 
 $(document).ready(function() {
 	$("#get-email-address").click(sendEmailAddress);
 	console.log("page loaded");
 
-	// $("div#company-structure a").click(faqHandler); 	WATCH OUT!!
+	// $("div#company-structure a").click(faqHandler); 				WATCH OUT!!
 
-	renderStaffPhotos();
+	// renderStaffPhotos(); 										for team page
+	// $("div#company-structure a").click(showTeam);
 
-	showTeamMembers();
+	$("#map div").click(function() {
+		$("div#container > h2").fadeOut(1200);
+		changeRoom(event.target.id);
+	});
 
-	$("div#company-structure a").click(showTeam);
 
 
 
-	// $("a").smoothScroll({speed: "500"});
+	// $("a").smoothScroll({speed: "500"}); 						CHECK FOR BUG
 
 	
 
