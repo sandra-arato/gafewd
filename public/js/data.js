@@ -6,7 +6,7 @@ var staff = [
 		role:"Junior modeller",
 		email:"anna@busybees.com",
 		phone:"304",
-		room:"creative",
+		room:"creative"
 	},
 	{
 		id:"ben",
@@ -15,7 +15,7 @@ var staff = [
 		role:"CNC operator",
 		email:"ben@busybees.com",
 		phone:"602",
-		room:"protolab",
+		room:"protolab"
 	},
 	{
 		id:"connor",
@@ -24,7 +24,7 @@ var staff = [
 		role:"RPT technologist",
 		email:"connor@busybees.com",
 		phone:"602",
-		room:"protolab",
+		room:"protolab"
 	},
 	{
 		id:"diana",
@@ -33,7 +33,7 @@ var staff = [
 		role:"Chief of Finance",
 		email:"diana@busybees.com",
 		phone:"107",
-		room:"office",
+		room:"office"
 	},
 	{
 		id:"eva",
@@ -42,7 +42,7 @@ var staff = [
 		role:"Marketing Guru",
 		email:"eva@busybees.com",
 		phone:"201",
-		room:"office",
+		room:"office"
 	},
 	{
 		id:"fiona",
@@ -51,7 +51,7 @@ var staff = [
 		role:"Sr. Project Manager",
 		email:"fiona@busybees.com",
 		phone:"202",
-		room:"creative",
+		room:"creative"
 	},
 	{
 		id:"gina",
@@ -60,7 +60,7 @@ var staff = [
 		role:"Receptionist",
 		email:"gina@busybees.com",
 		phone:"101",
-		room:"rec",
+		room:"rec"
 	},
 	{
 		id:"henry",
@@ -69,7 +69,7 @@ var staff = [
 		role:"CEO",
 		email:"henry@busybees.com",
 		phone:"108",
-		room:"office",
+		room:"office"
 	},
 	{
 		id:"ian",
@@ -78,7 +78,7 @@ var staff = [
 		role:"Project Manager",
 		email:"ian@busybees.com",
 		phone:"204",
-		room:"creative",
+		room:"creative"
 	},
 	{
 		id:"jon",
@@ -87,7 +87,7 @@ var staff = [
 		role:"Product Designer",
 		email:"jon@busybees.com",
 		phone:"302",
-		room:"creative",
+		room:"creative"
 	},
 	{
 		id:"kyle",
@@ -96,7 +96,7 @@ var staff = [
 		role:"Handyman",
 		email:"kyle@busybees.com",
 		phone:"606",
-		room:"protolab",
+		room:"protolab"
 	}
 ]
 
@@ -149,7 +149,7 @@ var rooms = [
 		room: "lounge",
 		title: "Lounge Room",
 		about: 
-			"The Loung is a great place for short naps, quick meetings and anything in between. When you feel like tinkering a bit, go ahead and make something in the electro corner. There is plenty of interesting books about design, prototyping and project managment on the shelf to, if you're a book worm.",
+			"The Lounge is a great place for short naps, quick meetings and anything in between. When you feel like tinkering a bit, go ahead and make something in the electro corner. There is plenty of interesting books about design, prototyping and project managment on the shelf to, if you're a book worm.",
 		workingarea: false,
 		workers: ""
 	}

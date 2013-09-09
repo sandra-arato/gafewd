@@ -380,7 +380,6 @@ body#index-site {
      background-image: url('../images/anonymus.jpg');
      background-position: center;
      background-size: 180px 135px; 
-     /* I use this here because I want to use different size in the mobile version */
      display: block;
      float: left;
      width: 100px;
@@ -633,4 +632,31 @@ div#map {
 #room-description span {
      font-family:'Fauna One', 'Arial', sans-serif;
      font-size: 20px;
+}
+
+#room-description .photos {
+     background-position: center;
+     background-size: 180px 135px; 
+     display: block;
+     float: left;
+     width: 100px;
+     height: 100px;
+     margin: 20px 0 0 20px;
+     text-indent: 100%;
+     overflow: hidden;
+     white-space: nowrap;
+     border-radius: 50px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< isotope fix >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
 }

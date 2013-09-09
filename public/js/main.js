@@ -6,10 +6,10 @@ function isValidEmailAddress(emailAddress) {
 
 function sendEmailAddress () {
 
-	var emailAddress = $("input")[0].value;
+	var emailAddress = $("input").val();
 
 	if( !isValidEmailAddress(emailAddress) ) {
-		alert("Hmm, looks like there's something wrong that email. Try again!")
+		alert("Hmm, looks like there's something wrong with that email. Try again!")
 	}
 	else {
 		alert("Cool! Now go and check your inbox for the first issue ;)");
@@ -90,12 +90,8 @@ function showTeam () {
 function lookForRoom (roomDivTitle) {
 	for (var index in rooms) {
 		if (roomDivTitle == rooms[index].room) {
-			console.log("object found");
-			currentRoom = rooms[index];
+			var currentRoom = rooms[index];
 			return currentRoom;
-		}
-		else {
-			console.log("object not found");
 		}
 
 	}
@@ -104,49 +100,55 @@ function lookForRoom (roomDivTitle) {
 function changeRoom (roomId) {
 	switch (roomId) {
 		case "creative-space":
-			var roomDivTitle = "creative"
+			var roomDivTitle = "creative";
 			break;
 		case "office-space": 
-			var roomDivTitle = "office"
+			var roomDivTitle = "office";
 			break;
 		case "reception-space":
-			var roomDivTitle = "rec"
+			var roomDivTitle = "rec";
 			break;
 		case "proto-space": 
-			var roomDivTitle = "protolab"
+			var roomDivTitle = "protolab";
 			break;
 		case "lounge-space":
-			var roomDivTitle = "lounge"
+			var roomDivTitle = "lounge";
 			break;
 		case "kitchen-space":
-			var roomDivTitle = "kitchen"
+			var roomDivTitle = "kitchen";
 			break;
 		default:
 			console.log("something happens in the switch");
 			break;
 	}
-	// console.log(roomDivTitle);
+
+	// function changeRoom(roomID) {
+	// var arr = split("-");
+	// var roomDivTitle = arr[0]; tbd: rename recrec-space, proto-space rename to protolab-space
+	}
 	
-	lookForRoom(roomDivTitle);
+	var currentRoom = lookForRoom(roomDivTitle);
+
+	console.log(currentRoom);
 	$("#room-description h2").html(currentRoom.title).css("font-size", "48px");
 	$("div#room-description span + p").html(currentRoom.about);
 
-	// if (currentRoom.workingarea) {
-	// 	var myDiv = $("div#room-description");
-	// 	myDiv.addClass("all-team-members");
+	if (currentRoom.workingarea) {
+		for (var index in staff ) {
+			newDiv = $("<div />", {
+				id: staff[index].id,
+				text: staff[index].name
+			});
+			newDiv.css("background-image", "url(images/" + staff[index].id + ".jpg)");
+			newDiv.addClass("photos element " + staff[index].room);
+			$("#room-description").append(newDiv);
 
-	// 	for (var index in staff ) {
+		}
 
-	// 		var newDiv = $("<div />", { 
-	// 			id: staff[index].id, 
-	// 			text: staff[index].name,
-	// 		});
-
-	// 		newDiv.css("background-image", "url(images/" + staff[index].id + ".jpg)");
-	// 		myDiv.append(newDiv);
-
-	// 	}
-	// }
+		$("div#room-description").isotope({ filter: "." + currentRoom.room});
+	}
+	
+	
 	
 	
 }
@@ -158,7 +160,7 @@ $(document).ready(function() {
 
 	// $("div#company-structure a").click(faqHandler); 				WATCH OUT!!
 
-	// renderStaffPhotos(); 										for team page
+	// renderStaffPhotos(); 										
 	// $("div#company-structure a").click(showTeam);
 
 	$("#map div").click(function() {
