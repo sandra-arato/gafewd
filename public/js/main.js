@@ -28,7 +28,6 @@ function faqHandler (e) {
 		$("#faq-answer-display").html("hide all");
 	}
 
-	// .faq-site h2 + p
 }
 
 function renderStaffPhotos (){
@@ -57,7 +56,7 @@ function showTeamMembers() {
 	for (var index in staff ) {
 	
 		newDiv = $("<div />");
-		newDiv.addClass("vcard " + staff[index].team);
+		newDiv.addClass("vcard element " + staff[index].team);
 
 		employeePhoto = $("<div />", { 
 			id: staff[index].id, 
@@ -68,26 +67,40 @@ function showTeamMembers() {
 		phoneNumber =$("<span><i class='icon-phone-sign'></i><br />" + staff[index].phone +"</span>");
 
 		employeeData =$(
-			"<ul> <li>" + staff[index].name + "</li> <li>" + staff[index].team + "</li> <li>" + staff[index].role + "</li><li>" + staff[index].email + "</li></ul>");
+			"<ul><li>" + staff[index].name + "</li><li>" + staff[index].team + "</li><li>" + staff[index].role + "</li><li>" + staff[index].email + "</li></ul>");
+
+		newDiv.append(employeePhoto, phoneNumber, employeeData);
+		newDiv.css("display", "none");
 
 		myDiv.append(newDiv);
-		newDiv.append(employeePhoto, phoneNumber, employeeData);
-
-		console.log("vcard loop");
+		
+		// console.log("vcard loop");
 
 	}
 }
 
+function showTeam () {
+	// console.log(e);
+	var buttonId = event.target.id;
+	console.log(buttonId);
+	$("div.team").isotope({ filter: "." + buttonId});
+	console.log($("div.team"));
+	$("div#company-structure + div").css("display", "none");
+	$("div.team div").css("display", "block");
+}
 
 $(document).ready(function() {
 	$("#get-email-address").click(sendEmailAddress);
 	console.log("page loaded");
 
-	$("#faq-answer-display").click(faqHandler);
+	// $("div#company-structure a").click(faqHandler); 	WATCH OUT!!
 
 	renderStaffPhotos();
 
 	showTeamMembers();
+
+	$("div#company-structure a").click(showTeam);
+
 
 
 	// $("a").smoothScroll({speed: "500"});
