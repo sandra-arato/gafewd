@@ -36,21 +36,25 @@ nav {
      z-index: 10000;
 }
 
-h1 {
+nav h1 {
+     margin: 0;
+}
+
+nav h1 a {
      display: inline-block;
      float: left;
-     margin: 0;
      padding: 8px 0 10px 20px;
      font-family: 'Tulpen One', 'Arial', sans-serif;
-     /*font-weight: 500;*/
      color: #dede00;
      font-size: 46px;
      font-weight: normal;
      letter-spacing: 2px;
      text-decoration: overline;
-     /*padding-right: 340px;*/
-     /*text-shadow: 1px 1px 1px #dede00;*/
      
+}
+
+nav h1 a:hover {
+     color: #a7a72a;
 }
 
 h2, h3 {
@@ -64,7 +68,7 @@ a {
 a:hover {
      color: #ffffff;
 }
-nav a {
+nav > a {
      display: block;
      float: right;
      box-sizing: border-box;
@@ -77,14 +81,13 @@ nav a {
      background-color: rgba(255, 255, 255, 0.7);
 }
 
-nav a:hover {
+nav > a:hover {
      background-color: #d9d90f;
      padding-top: 30px;
      border-top: 3px solid #222222;
 }
 
 #container {
-     display: block;
      width: 990px;
      margin: 86px auto 0 auto;
      /*height: 450px;*/
@@ -100,6 +103,25 @@ footer {
 
 }
 
+footer > div {
+     display: inline-block;
+     vertical-align: text-top;
+     margin-bottom: 50px;
+     margin-top: 20px;
+}
+
+footer > div:last-child {
+     width: 230px;
+     margin-left: 36px;
+}
+
+footer span {
+     font-family: 'Fauna One', serif;
+     margin-top: 40px;
+     background-color: #ffffff;
+     padding: 3px 5px;
+
+}
 
 footer a {
      color: #ffffff;
@@ -119,6 +141,8 @@ footer i {
      color: #666666;
 }
 
+
+
 .next-program {
      width: 350px;
      margin-right: 20px;
@@ -128,10 +152,6 @@ footer i {
      line-height: 1.4;
      margin: 0;
 
-}
-
-div.next-program h4 {
-     font-size: 18px;
 }
 
 .next-program p strong {
@@ -148,19 +168,8 @@ div.next-program h4 {
      color: #000000;
 }
 
-footer > div {
-     display: inline-block;
-     vertical-align: text-top;
-     margin-bottom: 50px;
-     margin-top: 20px;
-}
-
-footer span {
-     font-family: 'Fauna One', serif;
-     margin-top: 40px;
-     background-color: #ffffff;
-     padding: 3px 5px;
-
+.next-program h4 {
+     font-size: 18px;
 }
 
 div.social {
@@ -203,10 +212,7 @@ div.social {
      background-color: #e28241;
 }
 
-footer > div:last-child {
-     width: 230px;
-     margin-left: 36px;
-}
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* <<<<< okay, here comes the css for the index.html >>>>> */
@@ -495,7 +501,7 @@ div.company {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
 
 
-.faq-site h2  {
+#faq-site h2  {
      -webkit-margin-before: 0;
      margin-bottom: 0;
      padding-top: 20px;
@@ -503,7 +509,7 @@ div.company {
      font-size: 116px;
 }
 
-.faq-site h2 + p {
+#faq-site h2 + p {
      font-size: 54px;
      -webkit-margin-before: 0;
 }
