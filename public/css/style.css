@@ -211,56 +211,38 @@ footer > div:last-child {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* <<<<< okay, here comes the css for the index.html >>>>> */
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
-
-
 body#index-site {
-     background: url('../images/index-bg.JPG') repeat-y fixed;
+     background: url("../images/index-bg.JPG") repeat-y fixed;
      background-size: cover;
 }
 
-#index-site #container div {
-     background-color: rgba(150, 150, 150, 0.6);
-}
-
-#index-site #container > div:first-child {
-     float: right;
-     box-sizing: border-box;
-     width: 660px;
-}
-
 #index-site #container > div {
-     float: right;
+     width: 660px;
+     margin-left: 330px;
      box-sizing: border-box;
-     width: 220px;
-     padding: 0 10px 0 15px;
+     padding: 0 10px 10px 15px;
+     background-color: rgba(250, 250, 250, 0.6);
 }
-#index-site #container > div:last-child{
+
+#index-site #container > div:last-child {
+     position: relative;
+     height: 290px;
      margin-bottom: 20px;
 }
 
-#index-site #container a {
+#index-site #container > div:last-child div {
      display: inline-block;
      box-sizing: border-box;
-     width: 100%;
-     height: 100px;
-     margin-top: 18px;
-     margin-bottom: 24px;
-     padding: 60px 7px 0 0;
-     background-color: #ffffff;
-     font-family: 'Fauna One', 'Arial', sans-serif;
-     text-align: right;
-     color: #222222;
-     font-weight: 600;
+     width: 200px;
+     margin-right: 10px;
+     vertical-align: top;
 }
 
-#index-site #container a:hover {
-     background-color: #d9d90f;
-     /*padding-top: 30px;*/
-     border-top: 3px solid #222222;
-     /*border-top-left-radius: 40px;*/
+#index-site #container > div:last-child div.last {
+     margin-right: 0px;
 }
 
-#index-site #container h2  {
+#index-site #container h2 {
      -webkit-margin-before: 0;
      margin-bottom: 0;
      padding-top: 20px;
@@ -268,6 +250,26 @@ body#index-site {
      font-size: 96px;
 }
 
+#index-site #container a {
+     display: block;
+     position: absolute;
+     bottom: 0; 
+     vertical-align: bottom;
+     width: 200px;
+     margin-top: 18px;
+     margin-bottom: 24px;
+     padding: 60px 7px 7px 0;
+     font-family: 'Fauna One', 'Courier', serif;
+     text-align: right;
+     background-color: #ffffff;
+     color: #222222;
+     font-weight: 600;
+}
+
+#index-site #container a:hover {
+     background-color: #d9d90f;
+     border-top: 3px solid #222222;
+}
 
 /*end of index.html css */
 
