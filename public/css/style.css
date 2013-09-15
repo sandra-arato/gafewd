@@ -90,6 +90,7 @@ nav > a:hover {
 #container {
      width: 990px;
      margin: 86px auto 0 auto;
+     padding-bottom: 30px;
      /*height: 450px;*/
 }
 
@@ -309,130 +310,65 @@ body#index-site {
      color: #ffffff;
 }
 
+#company-structure a:hover {
+     background-color: #dbdb25;
+     color: #222222;
+}
+
 #company-structure div.last {
      margin-right: 0;
 }
 
-/*not sure */
-
-#manag-button, #desig-button,  #offic-button {
-     background-color: #d9d90f;
-     /*background-color: rgba(250, 250, 0, 0.33);*/
-}
-
-#manag-button:hover, #desig-button:hover, #offic-button:hover {
-     background-color: #a7a72a;
-}
-
-#facil-button, #produ-button {
-     background-color: #ecec73;
-}
-
-#facil-button:hover, #produ-button:hover {
-     background-color: #8a8a00;
-}
-
-
 .team {
-     width: 100%;
-     height: 140px;
+     text-align: center;
 }
 
 .team > div {
-     float: left;
-     margin: 10px;
+     display: inline-block;
+     height: 140px;
 }
 
-.all-team-members {
-     margin: 30px auto 0 auto;
-     text-align: center;
+.team > div:hover .photo {
+     background-size: 120px 90px;
+     width: 80px;
+     height: 80px;
+     border-radius: 40px;
+}
+
+.team div > p {
+     display: none;
+     line-height: 1.3;
+     margin: 0;
+     font-size: 14px;
      background-color: #ffffff;
-     padding: 20px 0;
-     border-top: 10px solid #d9d90f;
-     /*border-right: 10px dotted #d9d90f;*/
 }
 
-.all-team-members div {
+.team div > p:last-child {
+     color: #a7a72a;
+}
+
+.team div:hover > p {
+     display: block;
+}
+
+.photo {
      display: inline-block;
      box-sizing: border-box;
-     background-image: url('../images/anonymus.jpg');
+     background-image: url("../images/anonymous.jpg");
      background-position: center;
-     background-size: 200px 150px; 
+     background-size: 200px 150px;
      width: 120px;
      height: 120px;
-     margin: 8px;
-     text-indent: 100%;
-     overflow: hidden;        
-     white-space: nowrap;
      border-radius: 60px;
-     border: 8px solid transparent;
-
-}
-
-.all-team-members div:hover {
-     border-color: rgba(212, 212, 212, 0.4);
-}
-
-.vcard {
-     box-sizing: border-box;
-     width: 210px;            /*change this to 380px for mobile maybe*/
-     font-size: 14px;
-     /*border: 1px solid #888888;*/
-     border-radius: 80px 4px 4px 4px;
-     background-color: #ffffff;
-
-
-}
-
-.vcard div {
-     background-image: url('../images/anonymus.jpg');
-     background-position: center;
-     background-size: 180px 135px; 
-     display: block;
-     float: left;
-     width: 100px;
-     height: 100px;
-     margin: 20px 0 0 20px;
+     margin: 10px;
      text-indent: 100%;
      overflow: hidden;
      white-space: nowrap;
-     border-radius: 50px;
-}
-
-.vcard span {
-     float: right;
-     margin-top: 40px;
-     margin-right: 20px;
-     font-size: 20px;
-     color: #909000;
-     font-family: 'Fauna One', serif;
-}
-
-.vcard i {
-     font-size: 50px;
-}
-
-.vcard ul {
-     display: block;
-     float: right;
-     width: 170px;
-     padding: 0;
-     margin-right: 20px;
-     /*margin-top: 30px; added when mobile*/
 
 }
 
-.vcard li {
-     position: relative;
-     background-color: #d9d90f;
-     list-style-type: none;
-     padding: 0 6px;
-     /*text-indent: 10px;*/
-}
 
-.vcard li:nth-child(2) {
-     color: #ffffff;
-}
+
 
 
 /*end of team page css*/

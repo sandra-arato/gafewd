@@ -18,74 +18,40 @@ function sendEmailAddress () {
 
 function faqHandler (e) {
 	var answerShow = $("#faq-answer-display").html();
+	console.log(answerShow);
 	if (answerShow == "hide all") {
-		$(".faq-site h3 + p").slideUp();
-		$(".faq-site h3").css("line-height", "0.4");
+		$("#faq-site h3 + p").slideUp();
+		$("#faq-site h3").css("line-height", "0.4");
 		$("#faq-answer-display").html("show all");
 	}
 	else {
-		$(".faq-site h3 + p").slideDown();
+		$("#faq-site h3 + p").slideDown();
 		$("#faq-answer-display").html("hide all");
 	}
 
 }
 
 function renderStaffPhotos (){
-
-	var myDiv = $("div#company-structure + div");
-	myDiv.addClass("all-team-members");
-
-	for (var index in staff ) {
-
-		var newDiv = $("<div />", { 
-			id: staff[index].id, 
-			text: staff[index].name,
-		});
-
-		newDiv.css("background-image", "url(images/" + staff[index].id + ".jpg)");
-		myDiv.append(newDiv);
-
+	var div = $(".team");
+	for (var index in staff) {
+		var Div = $("<div />", {
+    		id: staff[index].id
+			});
+		var photo = $("<div />")
+			.html(staff[index].name)
+			.addClass("photo")
+			.css("background-image", "url(images/"+staff[index].id+".jpg)");
+		var name = $("<p />").html(staff[index].name);
+		var team = $("<p />").html(staff[index].team);
+		$(Div).append(photo, name, team);
+		$(div).append(Div); 
 	}
 
 }
 
-function showTeamMembers() {
-
-	myDiv = $("div.team");
-	
-	for (var index in staff ) {
-	
-		newDiv = $("<div />");
-		newDiv.addClass("vcard element " + staff[index].team);
-
-		employeePhoto = $("<div />", { 
-			id: staff[index].id, 
-			text: staff[index].name,
-		});
-		employeePhoto.css("background-image", "url(images/" + staff[index].id + ".jpg)");
-
-		phoneNumber =$("<span><i class='icon-phone-sign'></i><br />" + staff[index].phone +"</span>");
-
-		employeeData =$(
-			"<ul><li>" + staff[index].name + "</li><li>" + staff[index].team + "</li><li>" + staff[index].role + "</li><li>" + staff[index].email + "</li></ul>");
-
-		newDiv.append(employeePhoto, phoneNumber, employeeData);
-		// newDiv.css("display", "none");
-
-		myDiv.append(newDiv);
-		
-	}
-}
 
 
-function showTeam () {
 
-	$("div#company-structure + div").css("display", "none");
-
-	var buttonId = event.target.id;
-	showTeamMembers();
-	$("div.team").isotope({ filter: "." + buttonId});
-}
 
 function lookForRoom (roomDivTitle) {
 	for (var index in rooms) {
@@ -97,77 +63,16 @@ function lookForRoom (roomDivTitle) {
 	}
 }
 
-function changeRoom (roomId) {
-	switch (roomId) {
-		case "creative-space":
-			var roomDivTitle = "creative";
-			break;
-		case "office-space": 
-			var roomDivTitle = "office";
-			break;
-		case "reception-space":
-			var roomDivTitle = "rec";
-			break;
-		case "proto-space": 
-			var roomDivTitle = "protolab";
-			break;
-		case "lounge-space":
-			var roomDivTitle = "lounge";
-			break;
-		case "kitchen-space":
-			var roomDivTitle = "kitchen";
-			break;
-		default:
-			console.log("something happens in the switch");
-			break;
-	}
 
-	// function changeRoom(roomID) {
-	// var arr = split("-");
-	// var roomDivTitle = arr[0]; tbd: rename recrec-space, proto-space rename to protolab-space
-	}
-	
-	var currentRoom = lookForRoom(roomDivTitle);
-
-	console.log(currentRoom);
-	$("#room-description h2").html(currentRoom.title).css("font-size", "48px");
-	$("div#room-description span + p").html(currentRoom.about);
-
-	if (currentRoom.workingarea) {
-		for (var index in staff ) {
-			newDiv = $("<div />", {
-				id: staff[index].id,
-				text: staff[index].name
-			});
-			newDiv.css("background-image", "url(images/" + staff[index].id + ".jpg)");
-			newDiv.addClass("photos element " + staff[index].room);
-			$("#room-description").append(newDiv);
-
-		}
-
-		$("div#room-description").isotope({ filter: "." + currentRoom.room});
-	}
-	
-	
-	
-	
-}
 
 
 $(document).ready(function() {
-	$("#get-email-address").click(sendEmailAddress);
 	console.log("page loaded");
+	$("#get-email-address").click(sendEmailAddress);
+	$("#faq-answer-display").click(faqHandler);
 
-	// $("div#company-structure a").click(faqHandler); 				WATCH OUT!!
-
-	// renderStaffPhotos(); 										
-	// $("div#company-structure a").click(showTeam);
-
-	$("#map div").click(function() {
-		$("div#container > h2").fadeOut(1200);
-		changeRoom(event.target.id);
-	});
-
+	renderStaffPhotos(); 										
+	
 
 
 
