@@ -35,7 +35,8 @@ function renderStaffPhotos (){
 	var div = $(".team");
 	for (var index in staff) {
 		var Div = $("<div />", {
-    		id: staff[index].id
+    		id: staff[index].id,
+    		class: "element " + staff[index].team
 			});
 		var photo = $("<div />")
 			.html(staff[index].name)
@@ -49,7 +50,11 @@ function renderStaffPhotos (){
 
 }
 
-
+function filterStaff () {
+	var selector = $(this).attr("data-filter");
+  	$(".team").isotope({ filter: selector });
+  	return false;
+}
 
 
 
@@ -71,7 +76,8 @@ $(document).ready(function() {
 	$("#get-email-address").click(sendEmailAddress);
 	$("#faq-answer-display").click(faqHandler);
 
-	renderStaffPhotos(); 										
+	renderStaffPhotos();
+	$("#company-structure a").click(filterStaff); 										
 	
 
 

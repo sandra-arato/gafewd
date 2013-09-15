@@ -1,5 +1,39 @@
 @import url(http://fonts.googleapis.com/css?family=Fauna+One|Port+Lligat+Slab|Tulpen+One|Noto+Sans:400,700);
 
+/* Animation */
+
+@keyframes myfirst
+{
+from {
+     background-size: 200px 150px;
+     width: 120px;
+     height: 120px;
+     border-radius: 60px;
+}
+to {
+     background-size: 120px 90px;
+     width: 80px;
+     height: 80px;
+     border-radius: 40px;
+}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {
+     background-size: 200px 150px;
+     width: 120px;
+     height: 120px;
+     border-radius: 60px;
+}
+to {
+     background-size: 120px 90px;
+     width: 80px;
+     height: 80px;
+     border-radius: 40px;
+}
+}
+
 
 /* Clear fix hack */
 .clearfix:after {
@@ -298,16 +332,16 @@ body#index-site {
 }
 
 #company-structure a {
-     display: block;
-     float: left;
+     display: inline-block;
      box-sizing: border-box;
      width: 140px;
-     height: 120px;
+     height: 74px;
      margin-left: 40px;
      margin-right: 12px;
-     padding: 82px 0 0 8px;
-     border-radius: 40px 0 0 0;
+     padding: 48px 0 0 10px;
+     border-radius: 8px 0 0 0;
      color: #ffffff;
+     background-color: #a7a72a;
 }
 
 #company-structure a:hover {
@@ -325,30 +359,9 @@ body#index-site {
 
 .team > div {
      display: inline-block;
-     height: 140px;
-}
-
-.team > div:hover .photo {
-     background-size: 120px 90px;
-     width: 80px;
-     height: 80px;
-     border-radius: 40px;
-}
-
-.team div > p {
-     display: none;
-     line-height: 1.3;
-     margin: 0;
-     font-size: 14px;
-     background-color: #ffffff;
-}
-
-.team div > p:last-child {
-     color: #a7a72a;
-}
-
-.team div:hover > p {
-     display: block;
+     vertical-align: top;
+     height: 160px;
+     width: 140px;
 }
 
 .photo {
@@ -366,6 +379,34 @@ body#index-site {
      white-space: nowrap;
 
 }
+.team > div:hover .photo {
+     animation: myfirst 0.4s;
+     -webkit-animation: myfirst 0.4s; /* Safari and Chrome */
+     animation-timing-function: ease-out;
+     -webkit-animation-timing-function: ease-out;
+     background-size: 120px 90px;
+     width: 80px;
+     height: 80px;
+     border-radius: 40px;
+}
+
+.team div > p {
+     visibility: hidden;
+     line-height: 1.3;
+     margin: 0;
+     font-size: 14px;
+     background-color: #ffffff;
+}
+
+.team div > p:last-child {
+     color: #a7a72a;
+}
+
+.team div:hover > p {
+     visibility: visible;
+}
+
+
 
 
 
@@ -377,12 +418,12 @@ body#index-site {
 /* <<<<< here comes the company styling >>>>> */
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
 
-div.company {
+div#company-site {
      background-color: rgba(250, 250, 250, 0.3);
      padding: 0 16px;
 }
 
-.company #container img {
+#company-site #container img {
      display: block;
      box-sizing: border-box;
      float: left;
@@ -391,12 +432,9 @@ div.company {
      padding-top: 24px;
 }
 
-#intro-text h2 {
-     padding-top: 18px;
-     color: #d9d90f;
-}
 
-#container a h2 {
+
+#company-site #container a h2 {
      background-color: #ffffff;
      padding: 16px 0 8px 20px;
      margin: 0;
@@ -404,11 +442,21 @@ div.company {
      color: #dede00;
 }
 
-#container a h2:hover {
+#company-site #container a h2:hover {
      background-color: #d9d90f;
      color: #ffffff;
 }
 
+#company-site #container div a {
+     display: block;
+     float: right;
+     color: #ddd;
+}
+
+#intro-text h2 {
+     padding-top: 18px;
+     color: #d9d90f;
+}
 
 #slide1, #slide2, #slide3, #slide4 {
      padding-top: 70px;
@@ -426,11 +474,6 @@ div.company {
      padding-right: 0;
 }
 
-#container div a {
-     display: block;
-     float: right;
-     color: #ddd;
-}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* <<<<< styling of FAQ site >>>>> */
