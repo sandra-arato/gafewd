@@ -1,0 +1,658 @@
+@import url(http://fonts.googleapis.com/css?family=Fauna+One|Port+Lligat+Slab|Tulpen+One|Noto+Sans:400,700);
+
+/* Animation */
+
+@keyframes myfirst
+{
+from {
+     background-size: 200px 150px;
+     width: 120px;
+     height: 120px;
+     border-radius: 60px;
+     }
+to {
+     background-size: 120px 90px;
+     width: 80px;
+     height: 80px;
+     border-radius: 40px;
+     }
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {
+     background-size: 200px 150px;
+     width: 120px;
+     height: 120px;
+     border-radius: 60px;
+     }
+to {
+     background-size: 120px 90px;
+     width: 80px;
+     height: 80px;
+     border-radius: 40px;
+     }
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+     background-color: #555555;
+     background: url("../images/faq-bg.png");
+     font-family: 'Noto Sans', sans-serif;
+     font-size: 16px;
+     margin: 0;
+     padding: 0;
+}
+
+
+nav {
+     display: block;
+     position: fixed;
+     height: 66px;
+     width: 100%;
+     top: 0;
+     background-color: #ffffff;
+     box-shadow: 0 2px 4px #ddd;
+     z-index: 10000;
+}
+
+nav h1 {
+     margin: 0;
+}
+
+nav h1 a {
+     display: inline-block;
+     float: left;
+     padding: 8px 0 10px 20px;
+     font-family: 'Tulpen One', 'Arial', sans-serif;
+     color: #dede00;
+     font-size: 46px;
+     font-weight: normal;
+     letter-spacing: 2px;
+     text-decoration: overline;
+     
+}
+
+nav h1 a:hover {
+     color: #a7a72a;
+}
+
+h2, h3 {
+     font-family: 'Fauna One', 'Arial', sans-serif;
+}
+
+a {
+     font-family: 'Fauna One', serif;
+     text-decoration: none;
+}
+a:hover {
+     color: #ffffff;
+}
+nav > a {
+     display: block;
+     float: right;
+     box-sizing: border-box;
+     -moz-box-sizing:border-box;
+     height: 100%;
+     width: 102px;
+     text-align: center;
+     padding-top: 32px;
+     text-decoration: none;
+     color: #222222;
+     background-color: rgba(255, 255, 255, 0.7);
+}
+
+nav > a:hover {
+     background-color: #d9d90f;
+     padding-top: 30px;
+     border-top: 3px solid #222222;
+}
+
+#container {
+     width: 990px;
+     margin: 86px auto 0 auto;
+     padding-bottom: 30px;
+     /*height: 450px;*/
+}
+
+
+
+footer {
+     margin: 0;
+     background: #d9d90f;
+     box-shadow: 0 -2px 4px #ccc;
+     z-index: 9990;
+
+}
+
+footer > div {
+     display: inline-block;
+     vertical-align: text-top;
+     margin-bottom: 50px;
+     margin-top: 20px;
+}
+
+footer > div:last-child {
+     width: 230px;
+     margin-left: 36px;
+}
+
+footer span {
+     font-family: 'Fauna One', serif;
+     margin-top: 40px;
+     background-color: #ffffff;
+     padding: 3px 5px;
+
+}
+
+footer a {
+     color: #ffffff;
+     background-color: #444444;
+     padding: 2px 48px 3px 20px;
+     margin: 0 30px 0 20px;
+     font-size: 22px;
+     white-space: nowrap;
+}
+
+footer a:hover {
+     background-color: #666;
+     color: #a7a72a;
+}
+
+footer i {
+     color: #666666;
+}
+
+.next-program {
+     width: 350px;
+     margin-right: 20px;
+}
+
+.next-program p {
+     line-height: 1.4;
+     margin: 0;
+
+}
+
+.next-program p strong {
+     display: inline-block;
+     background-color: #ffffff;
+     background-color: rgba(233, 233, 233, 0.5);
+     width: 110px;
+}
+
+.next-program p i {
+     display: inline-block;
+     width: 24px;
+     text-align: center;
+     color: #000000;
+}
+
+.next-program h4 {
+     font-size: 18px;
+}
+
+div.social {
+     margin-left: 36px;
+     width: 175px; /* IE fix*/
+}
+
+.newsletter {
+     width: 445px; /* IE fix*/
+}
+
+.social div {
+     margin-top: 8px;
+     margin-left: 14px;
+}
+
+.social a {
+     display: inline-block;
+     width: 60px;
+     height: 60px;
+     font-size: 28px;
+     text-align: center;
+     background-color: #444444; 
+     color: #fff;
+     text-decoration: none;
+     margin: 4px;
+     line-height: 60px;
+     border-radius: 30px;
+     padding: 0;
+}
+
+.social .icon-facebook:hover {
+     background-color: #385397;
+}
+
+.social .icon-twitter:hover {
+     background-color: #47C3FE;
+}
+
+.social .icon-linkedin:hover {
+     background-color: #5391b4;
+}
+
+.social .icon-rss:hover {
+     background-color: #e28241;
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< okay, here comes the css for the index.html >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+body#index-site {
+     background: url("../images/index-bg.JPG") repeat-y fixed;
+     background-size: cover;
+}
+
+#index-site #container > div {
+     width: 660px;
+     margin-left: 330px;
+     box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
+     padding: 0 10px 10px 15px;
+     background-color: rgba(250, 250, 250, 0.6);
+}
+
+#index-site #container > div:last-child {
+     position: relative;
+     height: 290px;
+     margin-bottom: 20px;
+}
+
+#index-site #container > div:last-child div {
+     display: inline-block;
+     box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
+     width: 200px;
+     margin-right: 10px;
+     vertical-align: top;
+}
+
+#index-site #container > div:last-child div.last {
+     margin-right: 0px;
+}
+
+#index-site #container h2 {
+     -webkit-margin-before: 0;
+     margin-bottom: 0;
+     padding-top: 20px;
+     color: #dbdb25;
+     font-size: 96px;
+}
+
+#index-site #container a {
+     display: block;
+     position: absolute;
+     bottom: 0; 
+     vertical-align: bottom;
+     width: 200px;
+     margin-top: 18px;
+     margin-bottom: 24px;
+     padding: 60px 7px 7px 0;
+     font-family: 'Fauna One', 'Courier', serif;
+     text-align: right;
+     background-color: #ffffff;
+     color: #222222;
+     font-weight: 600;
+}
+
+#index-site #container a:hover {
+     background-color: #d9d90f;
+     border-top: 3px solid #222222;
+}
+
+/*end of index.html css */
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< this is the css for the team page >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+#company-structure {
+     width: 100%;
+     /*height: 310px;*/
+     background-color: #ffffff;
+}
+
+#company-structure p {
+     font-size: 24px;
+     padding: 20px 40px;
+}
+
+#company-structure a {
+     display: inline-block;
+     box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
+     width: 140px;
+     height: 74px;
+     margin-left: 40px;
+     margin-right: 12px;
+     padding: 48px 0 0 10px;
+     border-radius: 8px 0 0 0;
+     color: #ffffff;
+     background-color: #a7a72a;
+}
+
+#company-structure a:hover {
+     background-color: #dbdb25;
+     color: #222222;
+}
+
+#company-structure div.last {
+     margin-right: 0;
+}
+
+.team {
+     text-align: center;
+}
+
+.team > div {
+     display: inline-block;
+     vertical-align: top;
+     height: 160px;
+     width: 140px;
+}
+
+.photo {
+     display: inline-block;
+     box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
+     background-image: url("../images/anonymous.jpg");
+     background-position: center;
+     background-size: 200px 150px;
+     width: 120px;
+     height: 120px;
+     border-radius: 60px;
+     margin: 10px;
+     text-indent: 100%;
+     overflow: hidden;
+     white-space: nowrap;
+
+}
+.team > div:hover .photo {
+     animation: myfirst 0.4s;
+     -webkit-animation: myfirst 0.4s; /* Safari and Chrome */
+     animation-timing-function: ease-out;
+     -webkit-animation-timing-function: ease-out;
+     background-size: 120px 90px;
+     width: 80px;
+     height: 80px;
+     border-radius: 40px;
+}
+
+.team div > p {
+     visibility: hidden;
+     line-height: 1.3;
+     margin: 0;
+     font-size: 14px;
+     background-color: #ffffff;
+}
+
+.team div > p:last-child {
+     color: #a7a72a;
+}
+
+.team div:hover > p {
+     visibility: visible;
+}
+
+/*end of team page css*/
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< here comes the company styling >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+
+div#company-site {
+     background-color: rgba(250, 250, 250, 0.3);
+     padding: 0 16px;
+}
+
+#company-site #container img {
+     display: block;
+     box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
+     float: left;
+     width: 380px;
+     padding-right: 14px;
+     padding-top: 24px;
+}
+
+#company-site #container a h2 {
+     background-color: #ffffff;
+     padding: 16px 0 8px 20px;
+     margin: 0;
+     text-decoration: none;
+     color: #dede00;
+}
+
+#company-site #container a h2:hover {
+     background-color: #d9d90f;
+     color: #ffffff;
+}
+
+#company-site #container div a {
+     display: block;
+     float: right;
+     color: #ddd;
+}
+
+#intro-text h2 {
+     padding-top: 18px;
+     color: #d9d90f;
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+     padding-top: 70px;
+     padding-bottom:150px;
+}
+
+#company-site #container #slide4 img {
+     float: left;
+     height: 190px;
+     width: auto;
+     padding: 0 20px 0 36px;
+}
+
+#slide4 img.last {
+     padding-right: 0;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< styling of FAQ site >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+#faq-site h2  {
+     -webkit-margin-before: 0;
+     margin-bottom: 0;
+     margin: 0;
+     padding-top: 20px;
+     color: #dbdb25;
+     font-size: 116px;
+}
+
+#faq-site h2 + p {
+     font-size: 54px;
+     -webkit-margin-before: 0;
+}
+
+span#faq-answer-display {
+     display: inline-block;
+     float: right;
+     padding-right: 20px;
+     text-transform: uppercase;
+     font-size: 14px;
+     color: #666;
+     cursor: pointer;
+     /*background-color: red;*/
+
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< styling for workspace >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+
+#map {
+     float: left;
+     width: 560px;
+     height: 280px;
+     background: url("../images/office-map.png") no-repeat;
+     background-size: 550px;
+     text-align: center;
+     color: #fff;
+
+}
+
+div#map {
+     margin-top: 24px;
+}
+
+#map div {
+     position: relative;
+     border-radius: 3px;
+     box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
+     padding-top: 18px;
+}
+
+.map-space div {
+     color: transparent;
+}
+
+.map-space div:hover {
+     color: #ffffff;
+     cursor: pointer;
+}
+
+#creative-space {
+     top: 16px;
+     left: 415px;
+     width: 125px;
+     height: 258px;
+     background-color: rgba(174, 12, 104, 0.6); /*almost pink*/
+}
+
+#office-space {
+     top: -112px;
+     left: 141px;
+     width: 131px;
+     height: 125px;
+     background-color: rgba(217, 15, 15, 0.6); /* coke red*/
+}
+
+#reception-space {
+     top: -183px;
+     left: 276px;
+     width: 66px;
+     height: 72px;
+     background-color: rgba(100, 14, 175, 0.6); /* ute violet*/
+}
+
+#proto-space {
+     top: -343px;
+     left: 8px;
+     width: 127px;
+     height: 160px;
+     background-color: rgba(217, 217, 15, 0.6); /*smoke yellow*/
+}
+
+#lounge-space {
+     top: -600px;
+     left: 142px;
+     width: 217px;
+     height: 82px;
+     background-color: rgba(55, 26, 149, 0.6); /*not navy blue*/
+}
+
+#kitchen-space {
+     top: -633px;
+     left: 311px;
+     width: 149px;
+     height: 51px;
+     transform:rotate(270deg);
+     -ms-transform:rotate(270deg); /* IE 9 */
+     -webkit-transform:rotate(270deg); /* Safari and Chrome */
+     background-color: rgba(140, 203, 14, 0.6); /* fade green*/
+
+}
+
+#room-description {
+     background-color: rgba(250, 250, 250, 0.6);
+     border-radius: 3px;
+     width: 422px;
+     float: right;
+     padding-left: 8px;
+     overflow: hidden;
+}
+
+
+
+#room-description h2 {
+     font-size: 42px;
+     color: #222;
+}
+
+#room-description + h2 {
+     margin-before: 0;
+     margin-after: 0;
+     -webkit-margin-before: 0;
+     -webkit-margin-after: 0;
+     margin: 0;
+     display: inline-block;
+     font-size: 104px;
+     white-space: nowrap;
+     padding-top: 20px;
+     padding-bottom: 26px;
+     color: #dbdb25;
+}
+
+#room-description span {
+     font-family:'Fauna One', 'Arial', sans-serif;
+     font-size: 20px;
+}
+
+#room-description .photos {
+     background-position: center;
+     background-size: 180px 135px; 
+     display: block;
+     float: left;
+     width: 100px;
+     height: 100px;
+     margin: 20px 0 0 20px;
+     text-indent: 100%;
+     overflow: hidden;
+     white-space: nowrap;
+     border-radius: 50px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* <<<<< isotope fix >>>>> */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
