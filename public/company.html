@@ -12,6 +12,9 @@
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {$("body#company-site a").smoothScroll({speed: "500"}); });  	
+    </script>
 
 </head>
 <body id="company-site">
@@ -21,7 +24,7 @@
 			<a href="team.html">team</a>
 			<a href="workspace.html">workspace</a>
 	</nav>
-	<div id="container" class="company">
+	<div id="container">
 		<img src="images/ceo-together.jpg">
 
 		<div id="intro-text">
@@ -122,11 +125,11 @@
 			<p><strong><i class="icon-time"></i>When?</strong> 17/09 Friday 6 PM</p>
 			<p><strong><i class="icon-heart"></i>Info</strong> First round is on us :)</p>
 		</div>
-		<div>
+		<div class="social">
 			<i class="icon-bullhorn icon-4x pull-left"></i>
 			<span>Get informed about all the fun stuff we do!</span>
 			<p>You'll recieve a monthly newsletter on the upcoming events.</p>
-			<p>Put your login here</p>
+			<p>Put your email here</p>
 			<div class="input-prepend">
 			    <input class="span2" type="text" value="" placeholder="then click 'done!'">
 			    <a href="#" id="get-email-address" class="button">done!</a>

@@ -18,7 +18,6 @@ function sendEmailAddress () {
 
 function faqHandler (e) {
 	var answerShow = $("#faq-answer-display").html();
-	console.log(answerShow);
 	if (answerShow == "hide all") {
 		$("#faq-site h3 + p").slideUp();
 		$("#faq-site h3").css("line-height", "0.4");
@@ -48,7 +47,6 @@ function renderStaffPhotos (page){
 		$(Div).append(photo, name, team);
 		$(div).append(Div); 
 	}
-
 }
 
 function filterStaff () {
@@ -57,15 +55,12 @@ function filterStaff () {
   	return false;
 }
 
-
-
 function lookForRoom (roomDivTitle) {
 	for (var index in rooms) {
 		if (roomDivTitle == rooms[index].room) {
 			var currentRoom = rooms[index];
 			return currentRoom;
 		}
-
 	}
 }
 
@@ -77,34 +72,25 @@ function changeRoom() {
 	$("#room-description span + p").html(currentRoom.about);
 	$("#room-description .click-text").css("display", "none");
 
-	console.log(currentRoom.workingarea);
-
-	
 }
 
-
 $(document).ready(function() {
-	console.log("page loaded");
+	
 	$("#get-email-address").click(sendEmailAddress);
+
 	$("body#faq-site #faq-answer-display").click(faqHandler);
 
 	var pageId = $("body").attr("id");
-
-	console.log(pageId);
 	if (pageId == "workspace-site") {
 		renderStaffPhotos("room");
-		$(".team").isotope({ filter: ".none" });
+	$(".team").isotope({ filter: ".none" });
 	}
 	else if (pageId == "team-site") {
 		renderStaffPhotos("team");
 	}
+
 	$("body#team-site #company-structure a").click(filterStaff); 										
 	
 	$("body#workspace-site #map div").click(changeRoom).click(filterStaff);
-
-	// $("body#company-site a").smoothScroll({speed: "500"}); 	
-
-	
-
 
 });

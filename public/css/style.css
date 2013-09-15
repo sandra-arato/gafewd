@@ -9,13 +9,13 @@ from {
      width: 120px;
      height: 120px;
      border-radius: 60px;
-}
+     }
 to {
      background-size: 120px 90px;
      width: 80px;
      height: 80px;
      border-radius: 40px;
-}
+     }
 }
 
 @-webkit-keyframes myfirst /* Safari and Chrome */
@@ -25,13 +25,13 @@ from {
      width: 120px;
      height: 120px;
      border-radius: 60px;
-}
+     }
 to {
      background-size: 120px 90px;
      width: 80px;
      height: 80px;
      border-radius: 40px;
-}
+     }
 }
 
 
@@ -106,6 +106,7 @@ nav > a {
      display: block;
      float: right;
      box-sizing: border-box;
+     -moz-box-sizing:border-box;
      height: 100%;
      width: 102px;
      text-align: center;
@@ -176,8 +177,6 @@ footer i {
      color: #666666;
 }
 
-
-
 .next-program {
      width: 350px;
      margin-right: 20px;
@@ -209,6 +208,11 @@ footer i {
 
 div.social {
      margin-left: 36px;
+     width: 175px; /* IE fix*/
+}
+
+.newsletter {
+     width: 445px; /* IE fix*/
 }
 
 .social div {
@@ -261,6 +265,7 @@ body#index-site {
      width: 660px;
      margin-left: 330px;
      box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
      padding: 0 10px 10px 15px;
      background-color: rgba(250, 250, 250, 0.6);
 }
@@ -274,6 +279,7 @@ body#index-site {
 #index-site #container > div:last-child div {
      display: inline-block;
      box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
      width: 200px;
      margin-right: 10px;
      vertical-align: top;
@@ -334,6 +340,7 @@ body#index-site {
 #company-structure a {
      display: inline-block;
      box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
      width: 140px;
      height: 74px;
      margin-left: 40px;
@@ -367,6 +374,7 @@ body#index-site {
 .photo {
      display: inline-block;
      box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
      background-image: url("../images/anonymous.jpg");
      background-position: center;
      background-size: 200px 150px;
@@ -406,12 +414,6 @@ body#index-site {
      visibility: visible;
 }
 
-
-
-
-
-
-
 /*end of team page css*/
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -426,13 +428,12 @@ div#company-site {
 #company-site #container img {
      display: block;
      box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
      float: left;
      width: 380px;
      padding-right: 14px;
      padding-top: 24px;
 }
-
-
 
 #company-site #container a h2 {
      background-color: #ffffff;
@@ -463,7 +464,7 @@ div#company-site {
      padding-bottom:150px;
 }
 
-#slide4 img {
+#company-site #container #slide4 img {
      float: left;
      height: 190px;
      width: auto;
@@ -483,6 +484,7 @@ div#company-site {
 #faq-site h2  {
      -webkit-margin-before: 0;
      margin-bottom: 0;
+     margin: 0;
      padding-top: 20px;
      color: #dbdb25;
      font-size: 116px;
@@ -509,14 +511,6 @@ span#faq-answer-display {
 /* <<<<< styling for workspace >>>>> */
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
 
-#workspace-site h2 {
-     margin-before: 0;
-     margin-after: 0;
-     -webkit-margin-before: 0;
-     -webkit-margin-after: 0;
-
-}
-
 #map {
      float: left;
      width: 560px;
@@ -536,6 +530,7 @@ div#map {
      position: relative;
      border-radius: 3px;
      box-sizing: border-box;
+     -moz-box-sizing:border-box; /* Firefox */
      padding-top: 18px;
 }
 
@@ -614,11 +609,14 @@ div#map {
 #room-description h2 {
      font-size: 42px;
      color: #222;
-     padding-top: 10px;
-     padding-bottom: 14px;
 }
 
 #room-description + h2 {
+     margin-before: 0;
+     margin-after: 0;
+     -webkit-margin-before: 0;
+     -webkit-margin-after: 0;
+     margin: 0;
      display: inline-block;
      font-size: 104px;
      white-space: nowrap;
