@@ -16,7 +16,7 @@
 
 
 </head>
-<body class="faq-site">
+<body id="workspace-site">
 	<nav class="clearfix">
 		<h1><a href="index.html">busybees</a></h1>
 		<a href="company.html">company</a>
@@ -25,12 +25,12 @@
 	</nav>
 	<div id="container" class="clearfix">
 		<div id="map" class="map-space">
-			<div id="creative-space">Creative</div>
-			<div id="office-space">Office</div>
-			<div id="reception-space">Reception</div>
-			<div id="proto-space">Proto Lab</div>
-			<div id="lounge-space">Lounge</div>
-			<div id="kitchen-space">Kitchen</div>
+			<div id="creative-space" data-filter=".creative">Creative</div>
+			<div id="office-space" data-filter=".office">Office</div>
+			<div id="reception-space" data-filter=".reception">Reception</div>
+			<div id="proto-space" data-filter=".proto">Proto Lab</div>
+			<div id="lounge-space" data-filter=".none">Lounge</div>
+			<div id="kitchen-space" data-filter=".none">Kitchen</div>
 		</div>
 		<div id="room-description">
 			<h2>The Office</h2>
@@ -38,17 +38,16 @@
 			<p>
 				We are too cool to be in the office all the time, so we need a map to remember where things are. Keep this page bookmarked in case you get lost.
 			</p>
-			<p>
+			<p class="click-text">
 				Click on the map to wonder around our workspace. Meet the members, check out the facilities.
 			</p>
+			<div class="team"></div>
 		</div>
 		<h2>Explore the space</h2>
-		<!-- <div class="space"></div> -->
 	</div>
 
 
 
-	<!-- <div class="clear"></div> -->
 	<footer>
 		<div class="next-program">
 			<i class="icon-glass icon-4x pull-left"></i>

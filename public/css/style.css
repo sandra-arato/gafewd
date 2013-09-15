@@ -509,6 +509,14 @@ span#faq-answer-display {
 /* <<<<< styling for workspace >>>>> */
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!*/
 
+#workspace-site h2 {
+     margin-before: 0;
+     margin-after: 0;
+     -webkit-margin-before: 0;
+     -webkit-margin-after: 0;
+
+}
+
 #map {
      float: left;
      width: 560px;
@@ -595,7 +603,7 @@ div#map {
 #room-description {
      background-color: rgba(250, 250, 250, 0.6);
      border-radius: 3px;
-     width: 410px;
+     width: 422px;
      float: right;
      padding-left: 8px;
      overflow: hidden;
@@ -604,16 +612,19 @@ div#map {
 
 
 #room-description h2 {
-     font-size: 68px;
+     font-size: 42px;
      color: #222;
+     padding-top: 10px;
+     padding-bottom: 14px;
 }
 
 #room-description + h2 {
      display: inline-block;
-     font-size: 96px;
+     font-size: 104px;
      white-space: nowrap;
-     padding-bottom: 16px;
-
+     padding-top: 20px;
+     padding-bottom: 26px;
+     color: #dbdb25;
 }
 
 #room-description span {

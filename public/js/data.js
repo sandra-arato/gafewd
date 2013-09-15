@@ -15,7 +15,7 @@ var staff = [
 		role:"CNC operator",
 		email:"ben@busybees.com",
 		phone:"602",
-		room:"protolab"
+		room:"proto"
 	},
 	{
 		id:"connor",
@@ -24,7 +24,7 @@ var staff = [
 		role:"RPT technologist",
 		email:"connor@busybees.com",
 		phone:"602",
-		room:"protolab"
+		room:"proto"
 	},
 	{
 		id:"diana",
@@ -60,7 +60,7 @@ var staff = [
 		role:"Receptionist",
 		email:"gina@busybees.com",
 		phone:"101",
-		room:"rec"
+		room:"reception"
 	},
 	{
 		id:"henry",
@@ -96,13 +96,13 @@ var staff = [
 		role:"Handyman",
 		email:"kyle@busybees.com",
 		phone:"606",
-		room:"protolab"
+		room:"proto"
 	}
 ]
 
 var rooms = [
 	{
-		room: "protolab",
+		room: "proto",
 		title: "Prototyping Lab",
 		about: 
 			"This is where the magic happens. Come in and check out the latest 3D printing technology which helps to deliver design concepts to all of our partners. Life would be a lot harder without these great machines and of course the people who are making it happen.",
@@ -120,7 +120,7 @@ var rooms = [
 	},
 
 	{
-		room: "rec",
+		room: "reception",
 		title: "Reception",
 		about: 
 			"First impression counts. Because we truly believe in this, we made sure that the Reception tells the whole story of our company and represents the values that we stand for.",

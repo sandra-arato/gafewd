@@ -31,12 +31,13 @@ function faqHandler (e) {
 
 }
 
-function renderStaffPhotos (){
+function renderStaffPhotos (page){
 	var div = $(".team");
+
 	for (var index in staff) {
 		var Div = $("<div />", {
     		id: staff[index].id,
-    		class: "element " + staff[index].team
+    		class: "element " + staff[index][page]
 			});
 		var photo = $("<div />")
 			.html(staff[index].name)
@@ -68,21 +69,40 @@ function lookForRoom (roomDivTitle) {
 	}
 }
 
+function changeRoom() {
+	var roomDivTitle = $(this).attr("id").split("-")[0];
+	var currentRoom = lookForRoom(roomDivTitle);
 
+	$("#room-description h2").html(currentRoom.title);
+	$("#room-description span + p").html(currentRoom.about);
+	$("#room-description .click-text").css("display", "none");
+
+	console.log(currentRoom.workingarea);
+
+	
+}
 
 
 $(document).ready(function() {
 	console.log("page loaded");
 	$("#get-email-address").click(sendEmailAddress);
-	$("#faq-answer-display").click(faqHandler);
+	$("body#faq-site #faq-answer-display").click(faqHandler);
 
-	renderStaffPhotos();
-	$("#company-structure a").click(filterStaff); 										
+	var pageId = $("body").attr("id");
+
+	console.log(pageId);
+	if (pageId == "workspace-site") {
+		renderStaffPhotos("room");
+		$(".team").isotope({ filter: ".none" });
+	}
+	else if (pageId == "team-site") {
+		renderStaffPhotos("team");
+	}
+	$("body#team-site #company-structure a").click(filterStaff); 										
 	
+	$("body#workspace-site #map div").click(changeRoom).click(filterStaff);
 
-
-
-	// $("a").smoothScroll({speed: "500"}); 						CHECK FOR BUG
+	// $("body#company-site a").smoothScroll({speed: "500"}); 	
 
 	
 
